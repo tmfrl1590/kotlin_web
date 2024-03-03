@@ -84,6 +84,8 @@ public fun main() {
     val router = Router()
     com.varabyte.kobweb.core.init.initKobweb(router) { ctx ->
         ctx.router.register("/") { com.example.blogmultiplatform.pages.HomePage() }
+        ctx.router.register("/admin/login") {
+                com.example.blogmultiplatform.pages.admin.LoginScreen() }
 
     }
     router.setLegacyRouteRedirectStrategy(Router.LegacyRouteRedirectStrategy.DISALLOW)

@@ -13,17 +13,17 @@
   'use strict';
   //region block: imports
   var Regex_init_$Create$ = kotlin_kotlin.$_$.c1;
-  var toSet = kotlin_kotlin.$_$.y8;
-  var THROW_CCE = kotlin_kotlin.$_$.re;
-  var isCharSequence = kotlin_kotlin.$_$.va;
-  var trim = kotlin_kotlin.$_$.zd;
-  var toString = kotlin_kotlin.$_$.rb;
+  var toSet = kotlin_kotlin.$_$.z8;
+  var THROW_CCE = kotlin_kotlin.$_$.te;
+  var isCharSequence = kotlin_kotlin.$_$.wa;
+  var trim = kotlin_kotlin.$_$.be;
+  var toString = kotlin_kotlin.$_$.sb;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.k;
   var joinToString = kotlin_kotlin.$_$.e7;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.d1;
-  var charSequenceLength = kotlin_kotlin.$_$.da;
+  var charSequenceLength = kotlin_kotlin.$_$.ea;
   var joinTo = kotlin_kotlin.$_$.g7;
-  var ensureNotNull = kotlin_kotlin.$_$.kf;
+  var ensureNotNull = kotlin_kotlin.$_$.mf;
   var VOID = kotlin_kotlin.$_$.e;
   //endregion
   //region block: pre-declaration
@@ -122,15 +122,15 @@
     // Inline function 'kotlin.js.asDynamic' call
     return _this__u8e3s4[index];
   }
-  function get_0(_this__u8e3s4, index) {
-    // Inline function 'kotlin.js.asDynamic' call
-    return _this__u8e3s4[index];
-  }
   function EventSourceInit(withCredentials) {
     withCredentials = withCredentials === VOID ? false : withCredentials;
     var o = {};
     o['withCredentials'] = withCredentials;
     return o;
+  }
+  function get_0(_this__u8e3s4, index) {
+    // Inline function 'kotlin.js.asDynamic' call
+    return _this__u8e3s4[index];
   }
   function get_1(_this__u8e3s4, index) {
     // Inline function 'kotlin.js.asDynamic' call

@@ -22,138 +22,140 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var protoOf = kotlin_kotlin.$_$.ob;
-  var objectCreate = kotlin_kotlin.$_$.mb;
+  var protoOf = kotlin_kotlin.$_$.pb;
+  var objectCreate = kotlin_kotlin.$_$.nb;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.t;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.v;
-  var equals = kotlin_kotlin.$_$.ha;
-  var hashCode = kotlin_kotlin.$_$.oa;
-  var classes = kotlin_org_jetbrains_compose_html_html_core.$_$.l;
-  var id = kotlin_org_jetbrains_compose_html_html_core.$_$.q;
-  var hidden = kotlin_org_jetbrains_compose_html_html_core.$_$.p;
-  var title = kotlin_org_jetbrains_compose_html_html_core.$_$.w;
-  var dir = kotlin_org_jetbrains_compose_html_html_core.$_$.n;
-  var draggable = kotlin_org_jetbrains_compose_html_html_core.$_$.o;
-  var contentEditable = kotlin_org_jetbrains_compose_html_html_core.$_$.m;
-  var lang = kotlin_org_jetbrains_compose_html_html_core.$_$.t;
-  var tabIndex = kotlin_org_jetbrains_compose_html_html_core.$_$.v;
-  var spellCheck = kotlin_org_jetbrains_compose_html_html_core.$_$.u;
-  var inputMode = kotlin_org_jetbrains_compose_html_html_core.$_$.s;
-  var inputMode_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.r;
-  var onContextMenu = kotlin_org_jetbrains_compose_html_html_core.$_$.f1;
-  var onClick = kotlin_org_jetbrains_compose_html_html_core.$_$.e1;
-  var onDoubleClick = kotlin_org_jetbrains_compose_html_html_core.$_$.i1;
-  var onMouseDown = kotlin_org_jetbrains_compose_html_html_core.$_$.v1;
-  var onMouseUp = kotlin_org_jetbrains_compose_html_html_core.$_$.b2;
-  var onMouseEnter = kotlin_org_jetbrains_compose_html_html_core.$_$.w1;
-  var onMouseLeave = kotlin_org_jetbrains_compose_html_html_core.$_$.x1;
-  var onMouseMove = kotlin_org_jetbrains_compose_html_html_core.$_$.y1;
-  var onMouseOut = kotlin_org_jetbrains_compose_html_html_core.$_$.z1;
-  var onMouseOver = kotlin_org_jetbrains_compose_html_html_core.$_$.a2;
-  var onWheel = kotlin_org_jetbrains_compose_html_html_core.$_$.i2;
-  var onDrag = kotlin_org_jetbrains_compose_html_html_core.$_$.o1;
-  var onDrop = kotlin_org_jetbrains_compose_html_html_core.$_$.p1;
-  var onDragStart = kotlin_org_jetbrains_compose_html_html_core.$_$.n1;
-  var onDragEnd = kotlin_org_jetbrains_compose_html_html_core.$_$.j1;
-  var onDragOver = kotlin_org_jetbrains_compose_html_html_core.$_$.m1;
-  var onDragEnter = kotlin_org_jetbrains_compose_html_html_core.$_$.k1;
-  var onDragLeave = kotlin_org_jetbrains_compose_html_html_core.$_$.l1;
-  var onCopy = kotlin_org_jetbrains_compose_html_html_core.$_$.g1;
-  var onCut = kotlin_org_jetbrains_compose_html_html_core.$_$.h1;
-  var onPaste = kotlin_org_jetbrains_compose_html_html_core.$_$.c2;
-  var onKeyDown = kotlin_org_jetbrains_compose_html_html_core.$_$.t1;
-  var onKeyUp = kotlin_org_jetbrains_compose_html_html_core.$_$.u1;
-  var onFocus = kotlin_org_jetbrains_compose_html_html_core.$_$.s1;
-  var onBlur = kotlin_org_jetbrains_compose_html_html_core.$_$.d1;
-  var onFocusIn = kotlin_org_jetbrains_compose_html_html_core.$_$.q1;
-  var onFocusOut = kotlin_org_jetbrains_compose_html_html_core.$_$.r1;
-  var onTouchCancel = kotlin_org_jetbrains_compose_html_html_core.$_$.e2;
-  var onTouchMove = kotlin_org_jetbrains_compose_html_html_core.$_$.g2;
-  var onTouchEnd = kotlin_org_jetbrains_compose_html_html_core.$_$.f2;
-  var onTouchStart = kotlin_org_jetbrains_compose_html_html_core.$_$.h2;
-  var onAnimationEnd = kotlin_org_jetbrains_compose_html_html_core.$_$.a1;
-  var onAnimationIteration = kotlin_org_jetbrains_compose_html_html_core.$_$.b1;
-  var onAnimationStart = kotlin_org_jetbrains_compose_html_html_core.$_$.c1;
-  var onScroll = kotlin_org_jetbrains_compose_html_html_core.$_$.d2;
-  var addEventListener = kotlin_org_jetbrains_compose_html_html_core.$_$.z;
-  var addEventListener_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.y;
-  var AttrsScope = kotlin_org_jetbrains_compose_html_html_core.$_$.x;
-  var classMeta = kotlin_kotlin.$_$.ea;
-  var setMetadataFor = kotlin_kotlin.$_$.pb;
+  var equals = kotlin_kotlin.$_$.ia;
+  var hashCode = kotlin_kotlin.$_$.pa;
+  var classes = kotlin_org_jetbrains_compose_html_html_core.$_$.n;
+  var id = kotlin_org_jetbrains_compose_html_html_core.$_$.s;
+  var hidden = kotlin_org_jetbrains_compose_html_html_core.$_$.r;
+  var title = kotlin_org_jetbrains_compose_html_html_core.$_$.y;
+  var dir = kotlin_org_jetbrains_compose_html_html_core.$_$.p;
+  var draggable = kotlin_org_jetbrains_compose_html_html_core.$_$.q;
+  var contentEditable = kotlin_org_jetbrains_compose_html_html_core.$_$.o;
+  var lang = kotlin_org_jetbrains_compose_html_html_core.$_$.v;
+  var tabIndex = kotlin_org_jetbrains_compose_html_html_core.$_$.x;
+  var spellCheck = kotlin_org_jetbrains_compose_html_html_core.$_$.w;
+  var inputMode = kotlin_org_jetbrains_compose_html_html_core.$_$.u;
+  var inputMode_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.t;
+  var onContextMenu = kotlin_org_jetbrains_compose_html_html_core.$_$.h1;
+  var onClick = kotlin_org_jetbrains_compose_html_html_core.$_$.g1;
+  var onDoubleClick = kotlin_org_jetbrains_compose_html_html_core.$_$.k1;
+  var onMouseDown = kotlin_org_jetbrains_compose_html_html_core.$_$.x1;
+  var onMouseUp = kotlin_org_jetbrains_compose_html_html_core.$_$.d2;
+  var onMouseEnter = kotlin_org_jetbrains_compose_html_html_core.$_$.y1;
+  var onMouseLeave = kotlin_org_jetbrains_compose_html_html_core.$_$.z1;
+  var onMouseMove = kotlin_org_jetbrains_compose_html_html_core.$_$.a2;
+  var onMouseOut = kotlin_org_jetbrains_compose_html_html_core.$_$.b2;
+  var onMouseOver = kotlin_org_jetbrains_compose_html_html_core.$_$.c2;
+  var onWheel = kotlin_org_jetbrains_compose_html_html_core.$_$.k2;
+  var onDrag = kotlin_org_jetbrains_compose_html_html_core.$_$.q1;
+  var onDrop = kotlin_org_jetbrains_compose_html_html_core.$_$.r1;
+  var onDragStart = kotlin_org_jetbrains_compose_html_html_core.$_$.p1;
+  var onDragEnd = kotlin_org_jetbrains_compose_html_html_core.$_$.l1;
+  var onDragOver = kotlin_org_jetbrains_compose_html_html_core.$_$.o1;
+  var onDragEnter = kotlin_org_jetbrains_compose_html_html_core.$_$.m1;
+  var onDragLeave = kotlin_org_jetbrains_compose_html_html_core.$_$.n1;
+  var onCopy = kotlin_org_jetbrains_compose_html_html_core.$_$.i1;
+  var onCut = kotlin_org_jetbrains_compose_html_html_core.$_$.j1;
+  var onPaste = kotlin_org_jetbrains_compose_html_html_core.$_$.e2;
+  var onKeyDown = kotlin_org_jetbrains_compose_html_html_core.$_$.v1;
+  var onKeyUp = kotlin_org_jetbrains_compose_html_html_core.$_$.w1;
+  var onFocus = kotlin_org_jetbrains_compose_html_html_core.$_$.u1;
+  var onBlur = kotlin_org_jetbrains_compose_html_html_core.$_$.f1;
+  var onFocusIn = kotlin_org_jetbrains_compose_html_html_core.$_$.s1;
+  var onFocusOut = kotlin_org_jetbrains_compose_html_html_core.$_$.t1;
+  var onTouchCancel = kotlin_org_jetbrains_compose_html_html_core.$_$.g2;
+  var onTouchMove = kotlin_org_jetbrains_compose_html_html_core.$_$.i2;
+  var onTouchEnd = kotlin_org_jetbrains_compose_html_html_core.$_$.h2;
+  var onTouchStart = kotlin_org_jetbrains_compose_html_html_core.$_$.j2;
+  var onAnimationEnd = kotlin_org_jetbrains_compose_html_html_core.$_$.c1;
+  var onAnimationIteration = kotlin_org_jetbrains_compose_html_html_core.$_$.d1;
+  var onAnimationStart = kotlin_org_jetbrains_compose_html_html_core.$_$.e1;
+  var onScroll = kotlin_org_jetbrains_compose_html_html_core.$_$.f2;
+  var addEventListener = kotlin_org_jetbrains_compose_html_html_core.$_$.b1;
+  var addEventListener_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.a1;
+  var AttrsScope = kotlin_org_jetbrains_compose_html_html_core.$_$.z;
+  var classMeta = kotlin_kotlin.$_$.fa;
+  var setMetadataFor = kotlin_kotlin.$_$.qb;
   var VOID = kotlin_kotlin.$_$.e;
   var Unit_getInstance = kotlin_kotlin.$_$.l4;
-  var objectMeta = kotlin_kotlin.$_$.nb;
-  var THROW_IAE = kotlin_kotlin.$_$.se;
-  var enumEntries = kotlin_kotlin.$_$.u9;
-  var Enum = kotlin_kotlin.$_$.ge;
+  var objectMeta = kotlin_kotlin.$_$.ob;
+  var THROW_IAE = kotlin_kotlin.$_$.ue;
+  var enumEntries = kotlin_kotlin.$_$.v9;
+  var Enum = kotlin_kotlin.$_$.ie;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.d1;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.f2;
-  var Color_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.f;
-  var Color = kotlin_org_jetbrains_compose_html_html_core.$_$.r2;
-  var Companion_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.j;
-  var CSSBorder = kotlin_org_jetbrains_compose_html_html_core.$_$.j2;
-  var width = kotlin_org_jetbrains_compose_html_html_core.$_$.u4;
-  var style = kotlin_org_jetbrains_compose_html_html_core.$_$.p4;
-  var color = kotlin_org_jetbrains_compose_html_html_core.$_$.m3;
-  var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.n4;
-  var boxSizing = kotlin_org_jetbrains_compose_html_html_core.$_$.l3;
-  var toString = kotlin_kotlin.$_$.rb;
-  var get_PI = kotlin_kotlin.$_$.sb;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.r1;
-  var property = kotlin_org_jetbrains_compose_html_html_core.$_$.v2;
-  var property_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.w2;
-  var variable = kotlin_org_jetbrains_compose_html_html_core.$_$.y2;
-  var variable_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.x2;
-  var invoke = kotlin_org_jetbrains_compose_html_html_core.$_$.u2;
-  var invoke_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.t2;
-  var invoke_1 = kotlin_org_jetbrains_compose_html_html_core.$_$.s2;
-  var StyleScope = kotlin_org_jetbrains_compose_html_html_core.$_$.a3;
-  var copyToArray = kotlin_kotlin.$_$.p6;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.k;
-  var gridTemplateColumns = kotlin_org_jetbrains_compose_html_html_core.$_$.y3;
-  var joinToString = kotlin_kotlin.$_$.f7;
-  var THROW_CCE = kotlin_kotlin.$_$.re;
-  var Annotation = kotlin_kotlin.$_$.de;
+  var joinToString = kotlin_kotlin.$_$.e7;
+  var THROW_CCE = kotlin_kotlin.$_$.te;
+  var reversed = kotlin_kotlin.$_$.d8;
+  var charSequenceLength = kotlin_kotlin.$_$.ea;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.a6;
+  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.j;
+  var Collection = kotlin_kotlin.$_$.v4;
+  var isInterface = kotlin_kotlin.$_$.ab;
+  var Color_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.h;
+  var Color = kotlin_org_jetbrains_compose_html_html_core.$_$.t2;
+  var Companion_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.l;
+  var CSSBorder = kotlin_org_jetbrains_compose_html_html_core.$_$.l2;
+  var width = kotlin_org_jetbrains_compose_html_html_core.$_$.y4;
+  var style = kotlin_org_jetbrains_compose_html_html_core.$_$.t4;
+  var color = kotlin_org_jetbrains_compose_html_html_core.$_$.o3;
+  var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.q4;
+  var boxSizing = kotlin_org_jetbrains_compose_html_html_core.$_$.n3;
+  var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.o4;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.pf;
+  var toString = kotlin_kotlin.$_$.sb;
+  var get_PI = kotlin_kotlin.$_$.tb;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.r1;
+  var property = kotlin_org_jetbrains_compose_html_html_core.$_$.x2;
+  var property_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.y2;
+  var variable = kotlin_org_jetbrains_compose_html_html_core.$_$.a3;
+  var variable_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.z2;
+  var invoke = kotlin_org_jetbrains_compose_html_html_core.$_$.w2;
+  var invoke_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.v2;
+  var invoke_1 = kotlin_org_jetbrains_compose_html_html_core.$_$.u2;
+  var StyleScope = kotlin_org_jetbrains_compose_html_html_core.$_$.c3;
+  var copyToArray = kotlin_kotlin.$_$.p6;
+  var gridTemplateColumns = kotlin_org_jetbrains_compose_html_html_core.$_$.b4;
+  var joinToString_0 = kotlin_kotlin.$_$.f7;
+  var Annotation = kotlin_kotlin.$_$.fe;
   var lastOrNull = kotlin_kotlin.$_$.j7;
   var get_lastIndex = kotlin_kotlin.$_$.h7;
-  var joinToString_0 = kotlin_kotlin.$_$.e7;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.nf;
   var listOf = kotlin_kotlin.$_$.m7;
   var emptyList = kotlin_kotlin.$_$.r6;
   var addAll = kotlin_kotlin.$_$.q5;
-  var Companion_getInstance_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.g;
-  var display = kotlin_org_jetbrains_compose_html_html_core.$_$.p3;
-  var gridTemplateRows = kotlin_org_jetbrains_compose_html_html_core.$_$.z3;
-  var gridAutoColumns = kotlin_org_jetbrains_compose_html_html_core.$_$.w3;
-  var gridAutoRows = kotlin_org_jetbrains_compose_html_html_core.$_$.x3;
+  var Companion_getInstance_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.i;
+  var display = kotlin_org_jetbrains_compose_html_html_core.$_$.r3;
+  var gridTemplateRows = kotlin_org_jetbrains_compose_html_html_core.$_$.c4;
+  var gridAutoColumns = kotlin_org_jetbrains_compose_html_html_core.$_$.z3;
+  var gridAutoRows = kotlin_org_jetbrains_compose_html_html_core.$_$.a4;
   var wrapQuotesIfNecessary = kotlin_com_varabyte_kobweb_browser_ext.$_$.g;
   var listOfNotNull = kotlin_kotlin.$_$.l7;
-  var isNumber = kotlin_kotlin.$_$.bb;
-  var CSSVariable = kotlin_org_jetbrains_compose_html_html_core.$_$.q2;
+  var isNumber = kotlin_kotlin.$_$.cb;
+  var CSSVariable = kotlin_org_jetbrains_compose_html_html_core.$_$.s2;
   var getKClassFromExpression = kotlin_kotlin.$_$.b;
-  var ensureNotNull = kotlin_kotlin.$_$.kf;
+  var ensureNotNull = kotlin_kotlin.$_$.mf;
   var titleCamelCaseToKebabCase = kotlin_com_varabyte_kobweb_browser_ext.$_$.f;
-  var removeSuffix = kotlin_kotlin.$_$.ed;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.a6;
-  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.j;
-  var charSequenceLength = kotlin_kotlin.$_$.da;
-  var charSequenceGet = kotlin_kotlin.$_$.ca;
-  var isWhitespace = kotlin_kotlin.$_$.ad;
-  var Number_0 = kotlin_kotlin.$_$.ne;
+  var removeSuffix = kotlin_kotlin.$_$.gd;
+  var charSequenceGet = kotlin_kotlin.$_$.da;
+  var isWhitespace = kotlin_kotlin.$_$.cd;
+  var Number_0 = kotlin_kotlin.$_$.pe;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.a2;
-  var interfaceMeta = kotlin_kotlin.$_$.qa;
-  var Collection = kotlin_kotlin.$_$.v4;
-  var isInterface = kotlin_kotlin.$_$.za;
+  var interfaceMeta = kotlin_kotlin.$_$.ra;
   var checkCountOverflow = kotlin_kotlin.$_$.y5;
   var checkIndexOverflow = kotlin_kotlin.$_$.z5;
   var getOrNull = kotlin_kotlin.$_$.z6;
-  var DisposableEffectResult = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g;
-  var toList = kotlin_kotlin.$_$.s8;
   var traceEventStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.z;
   var isTraceInProgress = kotlin_org_jetbrains_compose_runtime_runtime.$_$.r;
-  var Companion_getInstance_1 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g1;
   var traceEventEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
   var DisposableEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.h;
+  var Companion_getInstance_1 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g1;
+  var DisposableEffectResult = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g;
+  var toList = kotlin_kotlin.$_$.t8;
   //endregion
   //region block: pre-declaration
   setMetadataFor(ComparableAttrsScope, 'ComparableAttrsScope', classMeta, VOID, [AttrsScope], ComparableAttrsScope_init_$Create$);
@@ -172,14 +174,46 @@
   setMetadataFor(Companion_0, 'Companion', objectMeta);
   setMetadataFor(BaselineSet, 'BaselineSet', classMeta, Enum);
   setMetadataFor(OverflowStrategy, 'OverflowStrategy', classMeta, Enum);
+  setMetadataFor(CSSBackground, 'CSSBackground', classMeta, VOID, VOID, CSSBackground);
+  setMetadataFor(BackgroundRepeat, 'BackgroundRepeat', classMeta);
+  setMetadataFor(Keyword, 'Keyword', classMeta, BackgroundRepeat);
+  setMetadataFor(RepeatStyle, 'RepeatStyle', classMeta, BackgroundRepeat);
+  setMetadataFor(TwoValue, 'TwoValue', classMeta, BackgroundRepeat);
   setMetadataFor(Companion_1, 'Companion', objectMeta);
-  setMetadataFor(BoxSizing, 'BoxSizing', classMeta);
-  setMetadataFor(ComparableStyleScope, 'ComparableStyleScope', classMeta, VOID, [StyleScope], ComparableStyleScope);
+  setMetadataFor(BackgroundSize, 'BackgroundSize', classMeta);
+  setMetadataFor(Keyword_0, 'Keyword', classMeta, BackgroundSize);
+  setMetadataFor(Size, 'Size', classMeta, BackgroundSize);
   setMetadataFor(Companion_2, 'Companion', objectMeta);
-  setMetadataFor(Cursor, 'Cursor', classMeta);
+  setMetadataFor(BackgroundPosition, 'BackgroundPosition', classMeta);
+  setMetadataFor(Keyword_1, 'Keyword', classMeta, BackgroundPosition);
+  setMetadataFor(Position, 'Position', classMeta, BackgroundPosition);
   setMetadataFor(Companion_3, 'Companion', objectMeta);
-  setMetadataFor(Appearance, 'Appearance', classMeta);
   setMetadataFor(Companion_4, 'Companion', objectMeta);
+  setMetadataFor(BackgroundOrigin, 'BackgroundOrigin', classMeta);
+  setMetadataFor(Companion_5, 'Companion', objectMeta);
+  setMetadataFor(BackgroundClip, 'BackgroundClip', classMeta);
+  setMetadataFor(Companion_6, 'Companion', objectMeta);
+  setMetadataFor(BackgroundAttachment, 'BackgroundAttachment', classMeta);
+  setMetadataFor(Companion_7, 'Companion', objectMeta);
+  setMetadataFor(BoxSizing, 'BoxSizing', classMeta);
+  setMetadataFor(Companion_8, 'Companion', objectMeta);
+  setMetadataFor(CSSPosition, 'CSSPosition', classMeta, VOID, VOID, CSSPosition_init_$Create$);
+  setMetadataFor(Edge, 'Edge', classMeta);
+  setMetadataFor(EdgeXOrCenter, 'EdgeXOrCenter', classMeta, Edge);
+  setMetadataFor(EdgeYOrCenter, 'EdgeYOrCenter', classMeta, Edge);
+  setMetadataFor(EdgeXOffset, 'EdgeXOffset', classMeta);
+  setMetadataFor(CenterX, 'CenterX', classMeta, EdgeXOrCenter);
+  setMetadataFor(Companion_9, 'Companion', objectMeta);
+  setMetadataFor(EdgeYOffset, 'EdgeYOffset', classMeta);
+  setMetadataFor(CenterY, 'CenterY', classMeta, EdgeYOrCenter);
+  setMetadataFor(EdgeY, 'EdgeY', classMeta, EdgeYOrCenter);
+  setMetadataFor(EdgeX, 'EdgeX', classMeta, EdgeXOrCenter);
+  setMetadataFor(ComparableStyleScope, 'ComparableStyleScope', classMeta, VOID, [StyleScope], ComparableStyleScope);
+  setMetadataFor(Companion_10, 'Companion', objectMeta);
+  setMetadataFor(Cursor, 'Cursor', classMeta);
+  setMetadataFor(Companion_11, 'Companion', objectMeta);
+  setMetadataFor(Appearance, 'Appearance', classMeta);
+  setMetadataFor(Companion_12, 'Companion', objectMeta);
   setMetadataFor(FontWeight, 'FontWeight', classMeta);
   setMetadataFor(GridTrackBuilderInRepeat, 'GridTrackBuilderInRepeat', classMeta);
   setMetadataFor(GridTrackBuilder, 'GridTrackBuilder', classMeta, GridTrackBuilderInRepeat, VOID, GridTrackBuilder);
@@ -189,28 +223,30 @@
   setMetadataFor(MinMax, 'MinMax', classMeta, TrackSize);
   setMetadataFor(Flex, 'Flex', classMeta, TrackSize);
   setMetadataFor(Inflexible, 'Inflexible', classMeta, TrackSize);
-  setMetadataFor(Keyword, 'Keyword', classMeta, Inflexible);
+  setMetadataFor(Keyword_2, 'Keyword', classMeta, Inflexible);
   setMetadataFor(Fixed, 'Fixed', classMeta, Inflexible);
-  setMetadataFor(Companion_5, 'Companion', objectMeta);
+  setMetadataFor(Companion_13, 'Companion', objectMeta);
   setMetadataFor(Type, 'Type', classMeta, Enum);
   setMetadataFor(Repeat, 'Repeat', classMeta, GridEntry);
   setMetadataFor(Track, 'Track', classMeta, Repeat);
   setMetadataFor(Auto, 'Auto', classMeta, Repeat);
   setMetadataFor(LineNames, 'LineNames', classMeta, GridEntry);
-  setMetadataFor(Companion_6, 'Companion', objectMeta);
+  setMetadataFor(Companion_14, 'Companion', objectMeta);
   setMetadataFor(GridDslMarker, 'GridDslMarker', classMeta, VOID, [Annotation]);
   setMetadataFor(GridBuilderInAuto, 'GridBuilderInAuto', classMeta);
   setMetadataFor(GridBuilder, 'GridBuilder', classMeta, GridBuilderInAuto, VOID, GridBuilder);
-  setMetadataFor(Companion_7, 'Companion', objectMeta);
+  setMetadataFor(Companion_15, 'Companion', objectMeta);
   setMetadataFor(VerticalAlign, 'VerticalAlign', classMeta);
-  setMetadataFor(Companion_8, 'Companion', objectMeta);
+  setMetadataFor(Companion_16, 'Companion', objectMeta);
   setMetadataFor(ListStyleType, 'ListStyleType', classMeta);
-  setMetadataFor(Companion_9, 'Companion', objectMeta);
+  setMetadataFor(Companion_17, 'Companion', objectMeta);
   setMetadataFor(ListStylePosition, 'ListStylePosition', classMeta);
-  setMetadataFor(Companion_10, 'Companion', objectMeta);
+  setMetadataFor(Companion_18, 'Companion', objectMeta);
+  setMetadataFor(MixBlendMode, 'MixBlendMode', classMeta);
+  setMetadataFor(Companion_19, 'Companion', objectMeta);
   setMetadataFor(ObjectFit, 'ObjectFit', classMeta);
   setMetadataFor(CSSOutline, 'CSSOutline', classMeta);
-  setMetadataFor(Companion_11, 'Companion', objectMeta);
+  setMetadataFor(Companion_20, 'Companion', objectMeta);
   setMetadataFor(Overflow, 'Overflow', classMeta);
   setMetadataFor(StyleVariable, 'StyleVariable', classMeta, VOID, [CSSVariable]);
   setMetadataFor(PropertyValue, 'PropertyValue', classMeta, StyleVariable);
@@ -218,23 +254,23 @@
   setMetadataFor(StringValue, 'StringValue', classMeta, StyleVariable);
   setMetadataFor(StyleVariablePropertyProvider, 'StyleVariablePropertyProvider', classMeta);
   setMetadataFor(StyleVariableNumberProvider, 'StyleVariableNumberProvider', classMeta);
-  setMetadataFor(Companion_12, 'Companion', objectMeta);
-  setMetadataFor(UserSelect, 'UserSelect', classMeta);
-  setMetadataFor(Companion_13, 'Companion', objectMeta);
-  setMetadataFor(WhiteSpace, 'WhiteSpace', classMeta);
-  setMetadataFor(Companion_14, 'Companion', objectMeta);
-  setMetadataFor(TextAlign, 'TextAlign', classMeta);
-  setMetadataFor(Companion_15, 'Companion', objectMeta);
+  setMetadataFor(Companion_21, 'Companion', objectMeta);
   setMetadataFor(TextDecorationLine, 'TextDecorationLine', classMeta);
-  setMetadataFor(Companion_16, 'Companion', objectMeta);
+  setMetadataFor(Companion_22, 'Companion', objectMeta);
+  setMetadataFor(UserSelect, 'UserSelect', classMeta);
+  setMetadataFor(Companion_23, 'Companion', objectMeta);
+  setMetadataFor(TextAlign, 'TextAlign', classMeta);
+  setMetadataFor(Companion_24, 'Companion', objectMeta);
+  setMetadataFor(WhiteSpace, 'WhiteSpace', classMeta);
+  setMetadataFor(Companion_25, 'Companion', objectMeta);
   setMetadataFor(CSSTransition, 'CSSTransition', classMeta);
-  setMetadataFor(Companion_17, 'Companion', objectMeta);
+  setMetadataFor(Companion_26, 'Companion', objectMeta);
   setMetadataFor(TransitionProperty, 'TransitionProperty', classMeta);
   setMetadataFor(CSSImage, 'CSSImage', classMeta);
-  setMetadataFor(Keyword_0, 'Keyword', classMeta, CSSImage);
+  setMetadataFor(Keyword_3, 'Keyword', classMeta, CSSImage);
   setMetadataFor(Url, 'Url', classMeta, CSSImage);
   setMetadataFor(Gradient, 'Gradient', classMeta, CSSImage);
-  setMetadataFor(Companion_18, 'Companion', objectMeta);
+  setMetadataFor(Companion_27, 'Companion', objectMeta);
   setMetadataFor(CalcNum, 'CalcNum', classMeta, Number_0);
   function times(_this__u8e3s4, b) {
     // Inline function 'kotlin.js.unsafeCast' call
@@ -726,6 +762,555 @@
     OverflowStrategy_initEntries();
     return OverflowStrategy_UNSAFE_instance;
   }
+  function CSSBackground(image, repeat, size, position, blend, origin, clip, attachment) {
+    image = image === VOID ? null : image;
+    repeat = repeat === VOID ? null : repeat;
+    size = size === VOID ? null : size;
+    position = position === VOID ? null : position;
+    blend = blend === VOID ? null : blend;
+    origin = origin === VOID ? null : origin;
+    clip = clip === VOID ? null : clip;
+    attachment = attachment === VOID ? null : attachment;
+    this.image_1 = image;
+    this.repeat_1 = repeat;
+    this.size_1 = size;
+    this.position_1 = position;
+    this.blend_1 = blend;
+    this.origin_1 = origin;
+    this.clip_1 = clip;
+    this.attachment_1 = attachment;
+  }
+  protoOf(CSSBackground).get_image_it3i2a_k$ = function () {
+    return this.image_1;
+  };
+  protoOf(CSSBackground).get_repeat_iydw9w_k$ = function () {
+    return this.repeat_1;
+  };
+  protoOf(CSSBackground).get_size_woubt6_k$ = function () {
+    return this.size_1;
+  };
+  protoOf(CSSBackground).get_position_jfponi_k$ = function () {
+    return this.position_1;
+  };
+  protoOf(CSSBackground).get_blend_ip8e20_k$ = function () {
+    return this.blend_1;
+  };
+  protoOf(CSSBackground).get_origin_hq9xkf_k$ = function () {
+    return this.origin_1;
+  };
+  protoOf(CSSBackground).get_clip_wok5uh_k$ = function () {
+    return this.clip_1;
+  };
+  protoOf(CSSBackground).get_attachment_iduc30_k$ = function () {
+    return this.attachment_1;
+  };
+  protoOf(CSSBackground).toString = function () {
+    // Inline function 'kotlin.collections.buildList' call
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'kotlin.collections.buildListInternal' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = ArrayList_init_$Create$();
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'com.varabyte.kobweb.compose.css.CSSBackground.toString.<anonymous>' call
+    var tmp0_safe_receiver = this.image_1;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      // Inline function 'com.varabyte.kobweb.compose.css.CSSBackground.toString.<anonymous>.<anonymous>' call
+      this_0.add_utx5q5_k$(tmp0_safe_receiver.toString());
+    }
+    var tmp1_safe_receiver = this.repeat_1;
+    if (tmp1_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      // Inline function 'com.varabyte.kobweb.compose.css.CSSBackground.toString.<anonymous>.<anonymous>' call
+      this_0.add_utx5q5_k$(tmp1_safe_receiver);
+    }
+    var tmp2_safe_receiver = this.position_1;
+    if (tmp2_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      // Inline function 'com.varabyte.kobweb.compose.css.CSSBackground.toString.<anonymous>.<anonymous>' call
+      this_0.add_utx5q5_k$(tmp2_safe_receiver.toString());
+    }
+    var tmp3_safe_receiver = this.size_1;
+    if (tmp3_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      // Inline function 'com.varabyte.kobweb.compose.css.CSSBackground.toString.<anonymous>.<anonymous>' call
+      if (this.position_1 == null) {
+        this_0.add_utx5q5_k$(Companion_getInstance_6().of_ke4f5d_k$(Companion_getInstance_11().get_TopLeft_9xuhv7_k$()));
+      }
+      this_0.add_utx5q5_k$('/');
+      this_0.add_utx5q5_k$(tmp3_safe_receiver.toString());
+    }
+    var tmp4_safe_receiver = this.origin_1;
+    if (tmp4_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      this_0.add_utx5q5_k$(tmp4_safe_receiver);
+      var tmp;
+      if (this.clip_1 == null) {
+        this_0.add_utx5q5_k$(Companion_getInstance_8().get_BorderBox_q3yb4a_k$().toString());
+        tmp = Unit_getInstance();
+      }
+    }
+    var tmp5_safe_receiver = this.clip_1;
+    if (tmp5_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      // Inline function 'com.varabyte.kobweb.compose.css.CSSBackground.toString.<anonymous>.<anonymous>' call
+      if (this.origin_1 == null) {
+        this_0.add_utx5q5_k$(Companion_getInstance_7().get_PaddingBox_ea98df_k$().toString());
+      }
+      this_0.add_utx5q5_k$(tmp5_safe_receiver);
+    }
+    var tmp6_safe_receiver = this.attachment_1;
+    if (tmp6_safe_receiver == null)
+      null;
+    else {
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      this_0.add_utx5q5_k$(tmp6_safe_receiver);
+    }
+    var tmp$ret$14 = this_0.build_1k0s4u_k$();
+    return joinToString(tmp$ret$14, ' ');
+  };
+  protoOf(CSSBackground).component1_7eebsc_k$ = function () {
+    return this.image_1;
+  };
+  protoOf(CSSBackground).component2_7eebsb_k$ = function () {
+    return this.repeat_1;
+  };
+  protoOf(CSSBackground).component3_7eebsa_k$ = function () {
+    return this.size_1;
+  };
+  protoOf(CSSBackground).component4_7eebs9_k$ = function () {
+    return this.position_1;
+  };
+  protoOf(CSSBackground).component5_7eebs8_k$ = function () {
+    return this.blend_1;
+  };
+  protoOf(CSSBackground).component6_7eebs7_k$ = function () {
+    return this.origin_1;
+  };
+  protoOf(CSSBackground).component7_7eebs6_k$ = function () {
+    return this.clip_1;
+  };
+  protoOf(CSSBackground).component8_7eebs5_k$ = function () {
+    return this.attachment_1;
+  };
+  protoOf(CSSBackground).copy_5ihszb_k$ = function (image, repeat, size, position, blend, origin, clip, attachment) {
+    return new CSSBackground(image, repeat, size, position, blend, origin, clip, attachment);
+  };
+  protoOf(CSSBackground).copy$default_jrt400_k$ = function (image, repeat, size, position, blend, origin, clip, attachment, $super) {
+    image = image === VOID ? this.image_1 : image;
+    repeat = repeat === VOID ? this.repeat_1 : repeat;
+    size = size === VOID ? this.size_1 : size;
+    position = position === VOID ? this.position_1 : position;
+    blend = blend === VOID ? this.blend_1 : blend;
+    origin = origin === VOID ? this.origin_1 : origin;
+    clip = clip === VOID ? this.clip_1 : clip;
+    attachment = attachment === VOID ? this.attachment_1 : attachment;
+    return $super === VOID ? this.copy_5ihszb_k$(image, repeat, size, position, blend, origin, clip, attachment) : $super.copy_5ihszb_k$.call(this, image, repeat, size, position, blend, origin, clip, attachment);
+  };
+  protoOf(CSSBackground).hashCode = function () {
+    var result = this.image_1 == null ? 0 : hashCode(this.image_1);
+    result = imul(result, 31) + (this.repeat_1 == null ? 0 : hashCode(this.repeat_1)) | 0;
+    result = imul(result, 31) + (this.size_1 == null ? 0 : hashCode(this.size_1)) | 0;
+    result = imul(result, 31) + (this.position_1 == null ? 0 : hashCode(this.position_1)) | 0;
+    result = imul(result, 31) + (this.blend_1 == null ? 0 : hashCode(this.blend_1)) | 0;
+    result = imul(result, 31) + (this.origin_1 == null ? 0 : hashCode(this.origin_1)) | 0;
+    result = imul(result, 31) + (this.clip_1 == null ? 0 : hashCode(this.clip_1)) | 0;
+    result = imul(result, 31) + (this.attachment_1 == null ? 0 : hashCode(this.attachment_1)) | 0;
+    return result;
+  };
+  protoOf(CSSBackground).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof CSSBackground))
+      return false;
+    var tmp0_other_with_cast = other instanceof CSSBackground ? other : THROW_CCE();
+    if (!equals(this.image_1, tmp0_other_with_cast.image_1))
+      return false;
+    if (!equals(this.repeat_1, tmp0_other_with_cast.repeat_1))
+      return false;
+    if (!equals(this.size_1, tmp0_other_with_cast.size_1))
+      return false;
+    if (!equals(this.position_1, tmp0_other_with_cast.position_1))
+      return false;
+    if (!equals(this.blend_1, tmp0_other_with_cast.blend_1))
+      return false;
+    if (!equals(this.origin_1, tmp0_other_with_cast.origin_1))
+      return false;
+    if (!equals(this.clip_1, tmp0_other_with_cast.clip_1))
+      return false;
+    if (!equals(this.attachment_1, tmp0_other_with_cast.attachment_1))
+      return false;
+    return true;
+  };
+  function background(_this__u8e3s4, color, backgrounds) {
+    var backgrounds_0 = reversed(backgrounds);
+    // Inline function 'kotlin.text.buildString' call
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = StringBuilder_init_$Create$();
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'com.varabyte.kobweb.compose.css.background.<anonymous>' call
+    this_0.append_22ad7x_k$(joinToString(backgrounds_0, ', '));
+    if (!(color == null)) {
+      // Inline function 'kotlin.text.isNotEmpty' call
+      if (charSequenceLength(this_0) > 0) {
+        this_0.append_am5a4z_k$(_Char___init__impl__6a9atx(32));
+      }
+      this_0.append_t8pm91_k$(color);
+    }
+    var tmp$ret$2 = this_0.toString();
+    _this__u8e3s4.property_wcrait_k$('background', tmp$ret$2);
+    var defaultBlendMode = Companion_getInstance_21().get_Normal_22avww_k$();
+    // Inline function 'kotlin.takeIf' call
+    // Inline function 'kotlin.collections.map' call
+    // Inline function 'kotlin.collections.mapTo' call
+    var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(backgrounds_0, 10));
+    var tmp0_iterator = backgrounds_0.iterator_jk1svi_k$();
+    while (tmp0_iterator.hasNext_bitz1p_k$()) {
+      var item = tmp0_iterator.next_20eer_k$();
+      // Inline function 'com.varabyte.kobweb.compose.css.background.<anonymous>' call
+      var tmp0_elvis_lhs = item.blend_1;
+      var tmp$ret$3 = tmp0_elvis_lhs == null ? defaultBlendMode : tmp0_elvis_lhs;
+      destination.add_utx5q5_k$(tmp$ret$3);
+    }
+    // Inline function 'kotlin.contracts.contract' call
+    var tmp;
+    // Inline function 'com.varabyte.kobweb.compose.css.background.<anonymous>' call
+    var tmp$ret$6;
+    $l$block_0: {
+      // Inline function 'kotlin.collections.any' call
+      var tmp_0;
+      if (isInterface(destination, Collection)) {
+        tmp_0 = destination.isEmpty_y1axqb_k$();
+      } else {
+        tmp_0 = false;
+      }
+      if (tmp_0) {
+        tmp$ret$6 = false;
+        break $l$block_0;
+      }
+      var tmp0_iterator_0 = destination.iterator_jk1svi_k$();
+      while (tmp0_iterator_0.hasNext_bitz1p_k$()) {
+        var element = tmp0_iterator_0.next_20eer_k$();
+        // Inline function 'com.varabyte.kobweb.compose.css.background.<anonymous>.<anonymous>' call
+        if (!(element.toString() === defaultBlendMode.toString())) {
+          tmp$ret$6 = true;
+          break $l$block_0;
+        }
+      }
+      tmp$ret$6 = false;
+    }
+    if (tmp$ret$6) {
+      tmp = destination;
+    } else {
+      tmp = null;
+    }
+    var blendModes = tmp;
+    if (!(blendModes == null)) {
+      _this__u8e3s4.property_wcrait_k$('background-blend-mode', joinToString(blendModes));
+    }
+  }
+  function _get_value__a43j40_1($this) {
+    return $this.value_1;
+  }
+  function Keyword(value) {
+    BackgroundRepeat.call(this, value);
+  }
+  function RepeatStyle(value) {
+    BackgroundRepeat.call(this, value);
+  }
+  function TwoValue(horizontal, vertical) {
+    BackgroundRepeat.call(this, '' + horizontal + ' ' + vertical);
+  }
+  function Companion_1() {
+    Companion_instance_1 = this;
+  }
+  protoOf(Companion_1).of_uj79nz_k$ = function (horizontal, vertical) {
+    return new TwoValue(horizontal, vertical);
+  };
+  protoOf(Companion_1).get_RepeatX_o4yei4_k$ = function () {
+    return new Keyword('repeat-x');
+  };
+  protoOf(Companion_1).get_RepeatY_o4yei3_k$ = function () {
+    return new Keyword('repeat-y');
+  };
+  protoOf(Companion_1).get_Repeat_3sxzno_k$ = function () {
+    return new RepeatStyle('repeat');
+  };
+  protoOf(Companion_1).get_Space_ih1xvh_k$ = function () {
+    return new RepeatStyle('space');
+  };
+  protoOf(Companion_1).get_Round_ighxdx_k$ = function () {
+    return new RepeatStyle('round');
+  };
+  protoOf(Companion_1).get_NoRepeat_ko4dp7_k$ = function () {
+    return new RepeatStyle('no-repeat');
+  };
+  protoOf(Companion_1).get_Inherit_a1a9e6_k$ = function () {
+    return new Keyword('inherit');
+  };
+  protoOf(Companion_1).get_Initial_a0h2v9_k$ = function () {
+    return new Keyword('initial');
+  };
+  protoOf(Companion_1).get_Revert_3t1tzh_k$ = function () {
+    return new Keyword('revert');
+  };
+  protoOf(Companion_1).get_Unset_ii4mhs_k$ = function () {
+    return new Keyword('unset');
+  };
+  var Companion_instance_1;
+  function Companion_getInstance_4() {
+    if (Companion_instance_1 == null)
+      new Companion_1();
+    return Companion_instance_1;
+  }
+  function BackgroundRepeat(value) {
+    Companion_getInstance_4();
+    this.value_1 = value;
+  }
+  protoOf(BackgroundRepeat).toString = function () {
+    return this.value_1;
+  };
+  function _get_value__a43j40_2($this) {
+    return $this.value_1;
+  }
+  function Keyword_0(value) {
+    BackgroundSize.call(this, value);
+  }
+  function Size(value) {
+    BackgroundSize.call(this, value);
+  }
+  function Companion_2() {
+    Companion_instance_2 = this;
+  }
+  protoOf(Companion_2).of_bnlfbt_k$ = function (width) {
+    return new Size('' + width);
+  };
+  protoOf(Companion_2).of_5s0ir0_k$ = function (width) {
+    return new Size('' + width);
+  };
+  protoOf(Companion_2).of_7ht9sn_k$ = function (width, height) {
+    return new Size('' + width + ' ' + height);
+  };
+  protoOf(Companion_2).of_89wy16_k$ = function (width, height) {
+    return new Size('' + width + ' ' + height);
+  };
+  protoOf(Companion_2).of_1gkwv8_k$ = function (width, height) {
+    return new Size('' + width + ' ' + height);
+  };
+  protoOf(Companion_2).get_Cover_i8910u_k$ = function () {
+    return new Keyword_0('cover');
+  };
+  protoOf(Companion_2).get_Contain_qhyalx_k$ = function () {
+    return new Keyword_0('contain');
+  };
+  protoOf(Companion_2).get_Inherit_a1a9e6_k$ = function () {
+    return new Keyword_0('inherit');
+  };
+  protoOf(Companion_2).get_Initial_a0h2v9_k$ = function () {
+    return new Keyword_0('initial');
+  };
+  protoOf(Companion_2).get_Revert_3t1tzh_k$ = function () {
+    return new Keyword_0('revert');
+  };
+  protoOf(Companion_2).get_Unset_ii4mhs_k$ = function () {
+    return new Keyword_0('unset');
+  };
+  var Companion_instance_2;
+  function Companion_getInstance_5() {
+    if (Companion_instance_2 == null)
+      new Companion_2();
+    return Companion_instance_2;
+  }
+  function BackgroundSize(value) {
+    Companion_getInstance_5();
+    this.value_1 = value;
+  }
+  protoOf(BackgroundSize).toString = function () {
+    return this.value_1;
+  };
+  function _get_value__a43j40_3($this) {
+    return $this.value_1;
+  }
+  function Keyword_1(value) {
+    BackgroundPosition.call(this, value);
+  }
+  function Position(position) {
+    BackgroundPosition.call(this, '' + position);
+  }
+  function Companion_3() {
+    Companion_instance_3 = this;
+  }
+  protoOf(Companion_3).of_ke4f5d_k$ = function (position) {
+    return new Position(position);
+  };
+  protoOf(Companion_3).get_Inherit_a1a9e6_k$ = function () {
+    return new Keyword_1('inherit');
+  };
+  protoOf(Companion_3).get_Initial_a0h2v9_k$ = function () {
+    return new Keyword_1('initial');
+  };
+  protoOf(Companion_3).get_Revert_3t1tzh_k$ = function () {
+    return new Keyword_1('revert');
+  };
+  protoOf(Companion_3).get_Unset_ii4mhs_k$ = function () {
+    return new Keyword_1('unset');
+  };
+  var Companion_instance_3;
+  function Companion_getInstance_6() {
+    if (Companion_instance_3 == null)
+      new Companion_3();
+    return Companion_instance_3;
+  }
+  function BackgroundPosition(value) {
+    Companion_getInstance_6();
+    this.value_1 = value;
+  }
+  protoOf(BackgroundPosition).toString = function () {
+    return this.value_1;
+  };
+  function _get_value__a43j40_4($this) {
+    return $this.value_1;
+  }
+  function Companion_4() {
+    Companion_instance_4 = this;
+  }
+  protoOf(Companion_4).get_BorderBox_q3yb4a_k$ = function () {
+    return new BackgroundOrigin('border-box');
+  };
+  protoOf(Companion_4).get_PaddingBox_ea98df_k$ = function () {
+    return new BackgroundOrigin('padding-box');
+  };
+  protoOf(Companion_4).get_ContentBox_h63h2z_k$ = function () {
+    return new BackgroundOrigin('content-box');
+  };
+  protoOf(Companion_4).get_Inherit_a1a9e6_k$ = function () {
+    return new BackgroundOrigin('inherit');
+  };
+  protoOf(Companion_4).get_Initial_a0h2v9_k$ = function () {
+    return new BackgroundOrigin('initial');
+  };
+  protoOf(Companion_4).get_Revert_3t1tzh_k$ = function () {
+    return new BackgroundOrigin('revert');
+  };
+  protoOf(Companion_4).get_Unset_ii4mhs_k$ = function () {
+    return new BackgroundOrigin('unset');
+  };
+  var Companion_instance_4;
+  function Companion_getInstance_7() {
+    if (Companion_instance_4 == null)
+      new Companion_4();
+    return Companion_instance_4;
+  }
+  function BackgroundOrigin(value) {
+    Companion_getInstance_7();
+    this.value_1 = value;
+  }
+  protoOf(BackgroundOrigin).toString = function () {
+    return this.value_1;
+  };
+  function _get_value__a43j40_5($this) {
+    return $this.value_1;
+  }
+  function Companion_5() {
+    Companion_instance_5 = this;
+  }
+  protoOf(Companion_5).get_BorderBox_q3yb4a_k$ = function () {
+    return new BackgroundClip('border-box');
+  };
+  protoOf(Companion_5).get_PaddingBox_ea98df_k$ = function () {
+    return new BackgroundClip('padding-box');
+  };
+  protoOf(Companion_5).get_ContentBox_h63h2z_k$ = function () {
+    return new BackgroundClip('content-box');
+  };
+  protoOf(Companion_5).get_Text_woag7q_k$ = function () {
+    return new BackgroundClip('text');
+  };
+  protoOf(Companion_5).get_Inherit_a1a9e6_k$ = function () {
+    return new BackgroundClip('inherit');
+  };
+  protoOf(Companion_5).get_Initial_a0h2v9_k$ = function () {
+    return new BackgroundClip('initial');
+  };
+  protoOf(Companion_5).get_Revert_3t1tzh_k$ = function () {
+    return new BackgroundClip('revert');
+  };
+  protoOf(Companion_5).get_Unset_ii4mhs_k$ = function () {
+    return new BackgroundClip('unset');
+  };
+  var Companion_instance_5;
+  function Companion_getInstance_8() {
+    if (Companion_instance_5 == null)
+      new Companion_5();
+    return Companion_instance_5;
+  }
+  function BackgroundClip(value) {
+    Companion_getInstance_8();
+    this.value_1 = value;
+  }
+  protoOf(BackgroundClip).toString = function () {
+    return this.value_1;
+  };
+  function _get_value__a43j40_6($this) {
+    return $this.value_1;
+  }
+  function Companion_6() {
+    Companion_instance_6 = this;
+  }
+  protoOf(Companion_6).get_Scroll_48xiie_k$ = function () {
+    return new BackgroundAttachment('scroll');
+  };
+  protoOf(Companion_6).get_Fixed_i9smcr_k$ = function () {
+    return new BackgroundAttachment('fixed');
+  };
+  protoOf(Companion_6).get_Local_id6s6a_k$ = function () {
+    return new BackgroundAttachment('local');
+  };
+  protoOf(Companion_6).get_Inherit_a1a9e6_k$ = function () {
+    return new BackgroundAttachment('inherit');
+  };
+  protoOf(Companion_6).get_Initial_a0h2v9_k$ = function () {
+    return new BackgroundAttachment('initial');
+  };
+  protoOf(Companion_6).get_Revert_3t1tzh_k$ = function () {
+    return new BackgroundAttachment('revert');
+  };
+  protoOf(Companion_6).get_Unset_ii4mhs_k$ = function () {
+    return new BackgroundAttachment('unset');
+  };
+  var Companion_instance_6;
+  function Companion_getInstance_9() {
+    if (Companion_instance_6 == null)
+      new Companion_6();
+    return Companion_instance_6;
+  }
+  function BackgroundAttachment(value) {
+    Companion_getInstance_9();
+    this.value_1 = value;
+  }
+  protoOf(BackgroundAttachment).toString = function () {
+    return this.value_1;
+  };
   function borderBottom(_this__u8e3s4, width, style, color) {
     width = width === VOID ? null : width;
     style = style === VOID ? null : style;
@@ -1071,38 +1656,38 @@
       return Unit_getInstance();
     };
   }
-  function _get_value__a43j40_1($this) {
+  function _get_value__a43j40_7($this) {
     return $this.value_1;
   }
-  function Companion_1() {
-    Companion_instance_1 = this;
+  function Companion_7() {
+    Companion_instance_7 = this;
   }
-  protoOf(Companion_1).get_BorderBox_q3yb4a_k$ = function () {
+  protoOf(Companion_7).get_BorderBox_q3yb4a_k$ = function () {
     return new BoxSizing('border-box');
   };
-  protoOf(Companion_1).get_ContentBox_h63h2z_k$ = function () {
+  protoOf(Companion_7).get_ContentBox_h63h2z_k$ = function () {
     return new BoxSizing('content-box');
   };
-  protoOf(Companion_1).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_7).get_Inherit_a1a9e6_k$ = function () {
     return new BoxSizing('inherit');
   };
-  protoOf(Companion_1).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_7).get_Initial_a0h2v9_k$ = function () {
     return new BoxSizing('initial');
   };
-  protoOf(Companion_1).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_7).get_Revert_3t1tzh_k$ = function () {
     return new BoxSizing('revert');
   };
-  protoOf(Companion_1).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_7).get_Unset_ii4mhs_k$ = function () {
     return new BoxSizing('unset');
   };
-  var Companion_instance_1;
-  function Companion_getInstance_4() {
-    if (Companion_instance_1 == null)
-      new Companion_1();
-    return Companion_instance_1;
+  var Companion_instance_7;
+  function Companion_getInstance_10() {
+    if (Companion_instance_7 == null)
+      new Companion_7();
+    return Companion_instance_7;
   }
   function BoxSizing(value) {
-    Companion_getInstance_4();
+    Companion_getInstance_10();
     this.value_1 = value;
   }
   protoOf(BoxSizing).toString = function () {
@@ -1153,6 +1738,244 @@
   function boxShadow_0(_this__u8e3s4, value) {
     _this__u8e3s4.property_wcrait_k$('box-shadow', value);
   }
+  function _get_value__a43j40_8($this) {
+    return $this.value_1;
+  }
+  function CSSPosition_init_$Init$(x, y, $this) {
+    x = x === VOID ? get_percent(50) : x;
+    y = y === VOID ? get_percent(50) : y;
+    CSSPosition.call($this, '' + x + ' ' + y);
+    return $this;
+  }
+  function CSSPosition_init_$Create$(x, y) {
+    return CSSPosition_init_$Init$(x, y, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_0(xAnchor, $this) {
+    CSSPosition.call($this, '' + xAnchor);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_0(xAnchor) {
+    return CSSPosition_init_$Init$_0(xAnchor, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_1(yAnchor, $this) {
+    CSSPosition.call($this, '' + toOffset(Companion_getInstance_12().get_CenterX_v8efdy_k$()) + ' ' + toOffset_0(yAnchor));
+    return $this;
+  }
+  function CSSPosition_init_$Create$_1(yAnchor) {
+    return CSSPosition_init_$Init$_1(yAnchor, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_2(xAnchor, yAnchor, $this) {
+    CSSPosition_init_$Init$_9(toOffset(xAnchor), toOffset_0(yAnchor), $this);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_2(xAnchor, yAnchor) {
+    return CSSPosition_init_$Init$_2(xAnchor, yAnchor, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_3(xOffset, $this) {
+    CSSPosition_init_$Init$_9(xOffset, toOffset_0(Companion_getInstance_12().get_CenterY_v8efdx_k$()), $this);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_3(xOffset) {
+    return CSSPosition_init_$Init$_3(xOffset, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_4(yOffset, $this) {
+    CSSPosition_init_$Init$_9(toOffset(Companion_getInstance_12().get_CenterX_v8efdy_k$()), yOffset, $this);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_4(yOffset) {
+    return CSSPosition_init_$Init$_4(yOffset, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_5(xCenter, y, $this) {
+    CSSPosition.call($this, '' + xCenter + ' ' + y);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_5(xCenter, y) {
+    return CSSPosition_init_$Init$_5(xCenter, y, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_6(x, yCenter, $this) {
+    CSSPosition.call($this, '' + x + ' ' + yCenter);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_6(x, yCenter) {
+    return CSSPosition_init_$Init$_6(x, yCenter, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_7(xOffset, yAnchor, $this) {
+    CSSPosition_init_$Init$_9(xOffset, toOffset_0(yAnchor), $this);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_7(xOffset, yAnchor) {
+    return CSSPosition_init_$Init$_7(xOffset, yAnchor, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_8(xAnchor, yOffset, $this) {
+    CSSPosition_init_$Init$_9(toOffset(xAnchor), yOffset, $this);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_8(xAnchor, yOffset) {
+    return CSSPosition_init_$Init$_8(xAnchor, yOffset, objectCreate(protoOf(CSSPosition)));
+  }
+  function CSSPosition_init_$Init$_9(xAnchor, yAnchor, $this) {
+    CSSPosition.call($this, '' + xAnchor + ' ' + yAnchor);
+    return $this;
+  }
+  function CSSPosition_init_$Create$_9(xAnchor, yAnchor) {
+    return CSSPosition_init_$Init$_9(xAnchor, yAnchor, objectCreate(protoOf(CSSPosition)));
+  }
+  function Companion_8() {
+    Companion_instance_8 = this;
+  }
+  protoOf(Companion_8).get_Top_18jj1w_k$ = function () {
+    return CSSPosition_init_$Create$_1(Companion_getInstance_12().get_Top_18jj1w_k$());
+  };
+  protoOf(Companion_8).get_TopRight_o46i0g_k$ = function () {
+    return CSSPosition_init_$Create$_2(Companion_getInstance_12().get_Right_igdsyb_k$(), Companion_getInstance_12().get_Top_18jj1w_k$());
+  };
+  protoOf(Companion_8).get_Right_igdsyb_k$ = function () {
+    return CSSPosition_init_$Create$_0(Companion_getInstance_12().get_Right_igdsyb_k$());
+  };
+  protoOf(Companion_8).get_BottomRight_v7b1go_k$ = function () {
+    return CSSPosition_init_$Create$_2(Companion_getInstance_12().get_Right_igdsyb_k$(), Companion_getInstance_12().get_Bottom_3m75bg_k$());
+  };
+  protoOf(Companion_8).get_Bottom_3m75bg_k$ = function () {
+    return CSSPosition_init_$Create$_1(Companion_getInstance_12().get_Bottom_3m75bg_k$());
+  };
+  protoOf(Companion_8).get_BottomLeft_f1aa2t_k$ = function () {
+    return CSSPosition_init_$Create$_2(Companion_getInstance_12().get_Left_wo5bw0_k$(), Companion_getInstance_12().get_Bottom_3m75bg_k$());
+  };
+  protoOf(Companion_8).get_Left_wo5bw0_k$ = function () {
+    return CSSPosition_init_$Create$_0(Companion_getInstance_12().get_Left_wo5bw0_k$());
+  };
+  protoOf(Companion_8).get_TopLeft_9xuhv7_k$ = function () {
+    return CSSPosition_init_$Create$_2(Companion_getInstance_12().get_Left_wo5bw0_k$(), Companion_getInstance_12().get_Top_18jj1w_k$());
+  };
+  protoOf(Companion_8).get_Center_3arb0i_k$ = function () {
+    return CSSPosition_init_$Create$_2(Companion_getInstance_12().get_CenterX_v8efdy_k$(), Companion_getInstance_12().get_CenterY_v8efdx_k$());
+  };
+  var Companion_instance_8;
+  function Companion_getInstance_11() {
+    if (Companion_instance_8 == null)
+      new Companion_8();
+    return Companion_instance_8;
+  }
+  function CSSPosition(value) {
+    Companion_getInstance_11();
+    this.value_1 = value;
+  }
+  protoOf(CSSPosition).toString = function () {
+    return this.value_1;
+  };
+  function EdgeXOrCenter(value) {
+    Edge.call(this, value);
+  }
+  function EdgeYOrCenter(value) {
+    Edge.call(this, value);
+  }
+  function EdgeXOffset(edgeX, offset) {
+    this.edgeX_1 = edgeX;
+    this.offset_1 = offset;
+  }
+  protoOf(EdgeXOffset).get_edgeX_iqqp76_k$ = function () {
+    return this.edgeX_1;
+  };
+  protoOf(EdgeXOffset).get_offset_hjmqak_k$ = function () {
+    return this.offset_1;
+  };
+  protoOf(EdgeXOffset).toString = function () {
+    return '' + this.edgeX_1 + ' ' + this.offset_1;
+  };
+  function toOffset(_this__u8e3s4) {
+    var tmp;
+    if (_this__u8e3s4 instanceof EdgeX) {
+      tmp = _this__u8e3s4.invoke_wfll5y_k$(get_percent(0));
+    } else {
+      if (_this__u8e3s4 instanceof CenterX) {
+        tmp = Companion_getInstance_12().get_Left_wo5bw0_k$().invoke_wfll5y_k$(get_percent(50));
+      } else {
+        noWhenBranchMatchedException();
+      }
+    }
+    return tmp;
+  }
+  function CenterX() {
+    EdgeXOrCenter.call(this, 'center');
+  }
+  function _get_value__a43j40_9($this) {
+    return $this.value_1;
+  }
+  function Companion_9() {
+    Companion_instance_9 = this;
+  }
+  protoOf(Companion_9).get_Top_18jj1w_k$ = function () {
+    return new EdgeY('top');
+  };
+  protoOf(Companion_9).get_Bottom_3m75bg_k$ = function () {
+    return new EdgeY('bottom');
+  };
+  protoOf(Companion_9).get_Left_wo5bw0_k$ = function () {
+    return new EdgeX('left');
+  };
+  protoOf(Companion_9).get_Right_igdsyb_k$ = function () {
+    return new EdgeX('right');
+  };
+  protoOf(Companion_9).get_CenterX_v8efdy_k$ = function () {
+    return new CenterX();
+  };
+  protoOf(Companion_9).get_CenterY_v8efdx_k$ = function () {
+    return new CenterY();
+  };
+  var Companion_instance_9;
+  function Companion_getInstance_12() {
+    if (Companion_instance_9 == null)
+      new Companion_9();
+    return Companion_instance_9;
+  }
+  function Edge(value) {
+    Companion_getInstance_12();
+    this.value_1 = value;
+  }
+  protoOf(Edge).toString = function () {
+    return this.value_1;
+  };
+  function EdgeYOffset(edgeY, offset) {
+    this.edgeY_1 = edgeY;
+    this.offset_1 = offset;
+  }
+  protoOf(EdgeYOffset).get_edgeY_iqqp77_k$ = function () {
+    return this.edgeY_1;
+  };
+  protoOf(EdgeYOffset).get_offset_hjmqak_k$ = function () {
+    return this.offset_1;
+  };
+  protoOf(EdgeYOffset).toString = function () {
+    return '' + this.edgeY_1 + ' ' + this.offset_1;
+  };
+  function toOffset_0(_this__u8e3s4) {
+    var tmp;
+    if (_this__u8e3s4 instanceof EdgeY) {
+      tmp = _this__u8e3s4.invoke_wfll5y_k$(get_percent(0));
+    } else {
+      if (_this__u8e3s4 instanceof CenterY) {
+        tmp = Companion_getInstance_12().get_Top_18jj1w_k$().invoke_wfll5y_k$(get_percent(50));
+      } else {
+        noWhenBranchMatchedException();
+      }
+    }
+    return tmp;
+  }
+  function CenterY() {
+    EdgeYOrCenter.call(this, 'center');
+  }
+  function EdgeY(value) {
+    EdgeYOrCenter.call(this, value);
+  }
+  protoOf(EdgeY).invoke_wfll5y_k$ = function (offset) {
+    return new EdgeYOffset(this, offset);
+  };
+  function EdgeX(value) {
+    EdgeXOrCenter.call(this, value);
+  }
+  protoOf(EdgeX).invoke_wfll5y_k$ = function (offset) {
+    return new EdgeXOffset(this, offset);
+  };
   function toDegrees(_this__u8e3s4) {
     var tmp;
     switch (toString(_this__u8e3s4.unit)) {
@@ -1231,140 +2054,140 @@
     }
     return tmp;
   }
-  function _get_value__a43j40_2($this) {
+  function _get_value__a43j40_10($this) {
     return $this.value_1;
   }
-  function Companion_2() {
-    Companion_instance_2 = this;
+  function Companion_10() {
+    Companion_instance_10 = this;
   }
-  protoOf(Companion_2).get_Auto_wnyn88_k$ = function () {
+  protoOf(Companion_10).get_Auto_wnyn88_k$ = function () {
     return new Cursor('auto');
   };
-  protoOf(Companion_2).get_Default_goqax4_k$ = function () {
+  protoOf(Companion_10).get_Default_goqax4_k$ = function () {
     return new Cursor('default');
   };
-  protoOf(Companion_2).get_None_wo6tgh_k$ = function () {
+  protoOf(Companion_10).get_None_wo6tgh_k$ = function () {
     return new Cursor('none');
   };
-  protoOf(Companion_2).get_ContextMenu_v99p0b_k$ = function () {
+  protoOf(Companion_10).get_ContextMenu_v99p0b_k$ = function () {
     return new Cursor('context-menu');
   };
-  protoOf(Companion_2).get_Help_wo2s2y_k$ = function () {
+  protoOf(Companion_10).get_Help_wo2s2y_k$ = function () {
     return new Cursor('help');
   };
-  protoOf(Companion_2).get_Pointer_m64vg4_k$ = function () {
+  protoOf(Companion_10).get_Pointer_m64vg4_k$ = function () {
     return new Cursor('pointer');
   };
-  protoOf(Companion_2).get_Progress_nqna52_k$ = function () {
+  protoOf(Companion_10).get_Progress_nqna52_k$ = function () {
     return new Cursor('progress');
   };
-  protoOf(Companion_2).get_Wait_woc9um_k$ = function () {
+  protoOf(Companion_10).get_Wait_woc9um_k$ = function () {
     return new Cursor('wait');
   };
-  protoOf(Companion_2).get_Cell_wnzl57_k$ = function () {
+  protoOf(Companion_10).get_Cell_wnzl57_k$ = function () {
     return new Cursor('cell');
   };
-  protoOf(Companion_2).get_Crosshair_69627b_k$ = function () {
+  protoOf(Companion_10).get_Crosshair_69627b_k$ = function () {
     return new Cursor('crosshair');
   };
-  protoOf(Companion_2).get_Text_woag7q_k$ = function () {
+  protoOf(Companion_10).get_Text_woag7q_k$ = function () {
     return new Cursor('text');
   };
-  protoOf(Companion_2).get_VerticalText_6nu4a4_k$ = function () {
+  protoOf(Companion_10).get_VerticalText_6nu4a4_k$ = function () {
     return new Cursor('vertical-text');
   };
-  protoOf(Companion_2).get_Alias_i73953_k$ = function () {
+  protoOf(Companion_10).get_Alias_i73953_k$ = function () {
     return new Cursor('alias');
   };
-  protoOf(Companion_2).get_Copy_wnzsny_k$ = function () {
+  protoOf(Companion_10).get_Copy_wnzsny_k$ = function () {
     return new Cursor('copy');
   };
-  protoOf(Companion_2).get_Move_wo66nu_k$ = function () {
+  protoOf(Companion_10).get_Move_wo66nu_k$ = function () {
     return new Cursor('move');
   };
-  protoOf(Companion_2).get_NoDrop_21hmk9_k$ = function () {
+  protoOf(Companion_10).get_NoDrop_21hmk9_k$ = function () {
     return new Cursor('no-drop');
   };
-  protoOf(Companion_2).get_NotAllowed_mobp4y_k$ = function () {
+  protoOf(Companion_10).get_NotAllowed_mobp4y_k$ = function () {
     return new Cursor('not-allowed');
   };
-  protoOf(Companion_2).get_Grab_wo2egl_k$ = function () {
+  protoOf(Companion_10).get_Grab_wo2egl_k$ = function () {
     return new Cursor('grab');
   };
-  protoOf(Companion_2).get_Grabbing_taamx7_k$ = function () {
+  protoOf(Companion_10).get_Grabbing_taamx7_k$ = function () {
     return new Cursor('grabbing');
   };
-  protoOf(Companion_2).get_AllScroll_y9eih1_k$ = function () {
+  protoOf(Companion_10).get_AllScroll_y9eih1_k$ = function () {
     return new Cursor('all-scroll');
   };
-  protoOf(Companion_2).get_ColumnResize_w27e5_k$ = function () {
+  protoOf(Companion_10).get_ColumnResize_w27e5_k$ = function () {
     return new Cursor('col-resize');
   };
-  protoOf(Companion_2).get_RowResize_dbunq3_k$ = function () {
+  protoOf(Companion_10).get_RowResize_dbunq3_k$ = function () {
     return new Cursor('row-resize');
   };
-  protoOf(Companion_2).get_NResize_kz2xjb_k$ = function () {
+  protoOf(Companion_10).get_NResize_kz2xjb_k$ = function () {
     return new Cursor('n-resize');
   };
-  protoOf(Companion_2).get_NeResize_pdt3gs_k$ = function () {
+  protoOf(Companion_10).get_NeResize_pdt3gs_k$ = function () {
     return new Cursor('ne-resize');
   };
-  protoOf(Companion_2).get_EResize_b0fdlc_k$ = function () {
+  protoOf(Companion_10).get_EResize_b0fdlc_k$ = function () {
     return new Cursor('e-resize');
   };
-  protoOf(Companion_2).get_SeResize_nbwu41_k$ = function () {
+  protoOf(Companion_10).get_SeResize_nbwu41_k$ = function () {
     return new Cursor('se-resize');
   };
-  protoOf(Companion_2).get_SResize_im7kea_k$ = function () {
+  protoOf(Companion_10).get_SResize_im7kea_k$ = function () {
     return new Cursor('s-resize');
   };
-  protoOf(Companion_2).get_SwResize_rrw3z5_k$ = function () {
+  protoOf(Companion_10).get_SwResize_rrw3z5_k$ = function () {
     return new Cursor('sw-resize');
   };
-  protoOf(Companion_2).get_WResize_uxqhha_k$ = function () {
+  protoOf(Companion_10).get_WResize_uxqhha_k$ = function () {
     return new Cursor('w-resize');
   };
-  protoOf(Companion_2).get_NwResize_ppzume_k$ = function () {
+  protoOf(Companion_10).get_NwResize_ppzume_k$ = function () {
     return new Cursor('nw-resize');
   };
-  protoOf(Companion_2).get_EwResize_kla901_k$ = function () {
+  protoOf(Companion_10).get_EwResize_kla901_k$ = function () {
     return new Cursor('ew-resize');
   };
-  protoOf(Companion_2).get_NsResize_wzla9q_k$ = function () {
+  protoOf(Companion_10).get_NsResize_wzla9q_k$ = function () {
     return new Cursor('ns-resize');
   };
-  protoOf(Companion_2).get_NeswResize_x625qw_k$ = function () {
+  protoOf(Companion_10).get_NeswResize_x625qw_k$ = function () {
     return new Cursor('nesw-resize');
   };
-  protoOf(Companion_2).get_NwseResize_c95994_k$ = function () {
+  protoOf(Companion_10).get_NwseResize_c95994_k$ = function () {
     return new Cursor('nwse-resize');
   };
-  protoOf(Companion_2).get_ZoomIn_7qsf41_k$ = function () {
+  protoOf(Companion_10).get_ZoomIn_7qsf41_k$ = function () {
     return new Cursor('zoom-in');
   };
-  protoOf(Companion_2).get_ZoomOut_qz4z8y_k$ = function () {
+  protoOf(Companion_10).get_ZoomOut_qz4z8y_k$ = function () {
     return new Cursor('zoom-out');
   };
-  protoOf(Companion_2).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_10).get_Inherit_a1a9e6_k$ = function () {
     return new Cursor('inherit');
   };
-  protoOf(Companion_2).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_10).get_Initial_a0h2v9_k$ = function () {
     return new Cursor('initial');
   };
-  protoOf(Companion_2).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_10).get_Revert_3t1tzh_k$ = function () {
     return new Cursor('revert');
   };
-  protoOf(Companion_2).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_10).get_Unset_ii4mhs_k$ = function () {
     return new Cursor('unset');
   };
-  var Companion_instance_2;
-  function Companion_getInstance_5() {
-    if (Companion_instance_2 == null)
-      new Companion_2();
-    return Companion_instance_2;
+  var Companion_instance_10;
+  function Companion_getInstance_13() {
+    if (Companion_instance_10 == null)
+      new Companion_10();
+    return Companion_instance_10;
   }
   function Cursor(value) {
-    Companion_getInstance_5();
+    Companion_getInstance_13();
     this.value_1 = value;
   }
   protoOf(Cursor).toString = function () {
@@ -1373,44 +2196,44 @@
   function cursor(_this__u8e3s4, cursor) {
     _this__u8e3s4.property_npxg1h_k$('cursor', cursor);
   }
-  function _get_value__a43j40_3($this) {
+  function _get_value__a43j40_11($this) {
     return $this.value_1;
   }
-  function Companion_3() {
-    Companion_instance_3 = this;
+  function Companion_11() {
+    Companion_instance_11 = this;
   }
-  protoOf(Companion_3).get_None_wo6tgh_k$ = function () {
+  protoOf(Companion_11).get_None_wo6tgh_k$ = function () {
     return new Appearance('none');
   };
-  protoOf(Companion_3).get_Auto_wnyn88_k$ = function () {
+  protoOf(Companion_11).get_Auto_wnyn88_k$ = function () {
     return new Appearance('auto');
   };
-  protoOf(Companion_3).get_MenuListButton_l4aue0_k$ = function () {
+  protoOf(Companion_11).get_MenuListButton_l4aue0_k$ = function () {
     return new Appearance('menulist-button');
   };
-  protoOf(Companion_3).get_TextField_o3y610_k$ = function () {
+  protoOf(Companion_11).get_TextField_o3y610_k$ = function () {
     return new Appearance('textfield');
   };
-  protoOf(Companion_3).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_11).get_Inherit_a1a9e6_k$ = function () {
     return new Appearance('inherit');
   };
-  protoOf(Companion_3).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_11).get_Initial_a0h2v9_k$ = function () {
     return new Appearance('initial');
   };
-  protoOf(Companion_3).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_11).get_Revert_3t1tzh_k$ = function () {
     return new Appearance('revert');
   };
-  protoOf(Companion_3).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_11).get_Unset_ii4mhs_k$ = function () {
     return new Appearance('unset');
   };
-  var Companion_instance_3;
-  function Companion_getInstance_6() {
-    if (Companion_instance_3 == null)
-      new Companion_3();
-    return Companion_instance_3;
+  var Companion_instance_11;
+  function Companion_getInstance_14() {
+    if (Companion_instance_11 == null)
+      new Companion_11();
+    return Companion_instance_11;
   }
   function Appearance(value) {
-    Companion_getInstance_6();
+    Companion_getInstance_14();
     this.value_1 = value;
   }
   protoOf(Appearance).toString = function () {
@@ -1419,68 +2242,68 @@
   function appearance(_this__u8e3s4, appearance) {
     _this__u8e3s4.property_npxg1h_k$('appearance', appearance);
   }
-  function _get_value__a43j40_4($this) {
+  function _get_value__a43j40_12($this) {
     return $this.value_1;
   }
-  function Companion_4() {
-    Companion_instance_4 = this;
+  function Companion_12() {
+    Companion_instance_12 = this;
   }
-  protoOf(Companion_4).get_Thin_woai2q_k$ = function () {
+  protoOf(Companion_12).get_Thin_woai2q_k$ = function () {
     return new FontWeight('100');
   };
-  protoOf(Companion_4).get_ExtraLight_ov7yxb_k$ = function () {
+  protoOf(Companion_12).get_ExtraLight_ov7yxb_k$ = function () {
     return new FontWeight('200');
   };
-  protoOf(Companion_4).get_Light_id31e5_k$ = function () {
+  protoOf(Companion_12).get_Light_id31e5_k$ = function () {
     return new FontWeight('300');
   };
-  protoOf(Companion_4).get_Medium_1fiba6_k$ = function () {
+  protoOf(Companion_12).get_Medium_1fiba6_k$ = function () {
     return new FontWeight('500');
   };
-  protoOf(Companion_4).get_SemiBold_aid1c4_k$ = function () {
+  protoOf(Companion_12).get_SemiBold_aid1c4_k$ = function () {
     return new FontWeight('600');
   };
-  protoOf(Companion_4).get_ExtraBold_xklwd0_k$ = function () {
+  protoOf(Companion_12).get_ExtraBold_xklwd0_k$ = function () {
     return new FontWeight('800');
   };
-  protoOf(Companion_4).get_Black_i7mvue_k$ = function () {
+  protoOf(Companion_12).get_Black_i7mvue_k$ = function () {
     return new FontWeight('900');
   };
-  protoOf(Companion_4).get_ExtraBlack_oprtdk_k$ = function () {
+  protoOf(Companion_12).get_ExtraBlack_oprtdk_k$ = function () {
     return new FontWeight('950');
   };
-  protoOf(Companion_4).get_Normal_22avww_k$ = function () {
+  protoOf(Companion_12).get_Normal_22avww_k$ = function () {
     return new FontWeight('normal');
   };
-  protoOf(Companion_4).get_Bold_wnz5ke_k$ = function () {
+  protoOf(Companion_12).get_Bold_wnz5ke_k$ = function () {
     return new FontWeight('bold');
   };
-  protoOf(Companion_4).get_Lighter_vm6n22_k$ = function () {
+  protoOf(Companion_12).get_Lighter_vm6n22_k$ = function () {
     return new FontWeight('lighter');
   };
-  protoOf(Companion_4).get_Bolder_3mclb9_k$ = function () {
+  protoOf(Companion_12).get_Bolder_3mclb9_k$ = function () {
     return new FontWeight('bolder');
   };
-  protoOf(Companion_4).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_12).get_Inherit_a1a9e6_k$ = function () {
     return new FontWeight('inherit');
   };
-  protoOf(Companion_4).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_12).get_Initial_a0h2v9_k$ = function () {
     return new FontWeight('initial');
   };
-  protoOf(Companion_4).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_12).get_Revert_3t1tzh_k$ = function () {
     return new FontWeight('revert');
   };
-  protoOf(Companion_4).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_12).get_Unset_ii4mhs_k$ = function () {
     return new FontWeight('unset');
   };
-  var Companion_instance_4;
-  function Companion_getInstance_7() {
-    if (Companion_instance_4 == null)
-      new Companion_4();
-    return Companion_instance_4;
+  var Companion_instance_12;
+  function Companion_getInstance_15() {
+    if (Companion_instance_12 == null)
+      new Companion_12();
+    return Companion_instance_12;
   }
   function FontWeight(value) {
-    Companion_getInstance_7();
+    Companion_getInstance_15();
     this.value_1 = value;
   }
   protoOf(FontWeight).toString = function () {
@@ -1500,7 +2323,7 @@
     block(this_0);
     var this_1 = this_0.tracks_1;
     var repeatTracks = copyToArray(this_1);
-    this.tracks_1.add_utx5q5_k$(Companion_getInstance_9().repeat_1fs2oe_k$(count, repeatTracks.slice()));
+    this.tracks_1.add_utx5q5_k$(Companion_getInstance_17().repeat_1fs2oe_k$(count, repeatTracks.slice()));
   };
   protoOf(GridTrackBuilder).repeat_x8tdgb_k$ = function (type, block) {
     // Inline function 'kotlin.collections.toTypedArray' call
@@ -1510,7 +2333,7 @@
     block(this_0);
     var this_1 = this_0.tracks_1;
     var repeatTracks = copyToArray(this_1);
-    this.tracks_1.add_utx5q5_k$(Companion_getInstance_9().repeat_lz16g6_k$(type, repeatTracks.slice()));
+    this.tracks_1.add_utx5q5_k$(Companion_getInstance_17().repeat_lz16g6_k$(type, repeatTracks.slice()));
   };
   function GridTrackBuilderInRepeat() {
     var tmp = this;
@@ -1518,13 +2341,13 @@
     tmp.tracks_1 = ArrayList_init_$Create$();
   }
   protoOf(GridTrackBuilderInRepeat).get_auto_woj2t4_k$ = function () {
-    return Companion_getInstance_8().get_Auto_wnyn88_k$();
+    return Companion_getInstance_16().get_Auto_wnyn88_k$();
   };
   protoOf(GridTrackBuilderInRepeat).get_minContent_f65gog_k$ = function () {
-    return Companion_getInstance_8().get_MinContent_hspenk_k$();
+    return Companion_getInstance_16().get_MinContent_hspenk_k$();
   };
   protoOf(GridTrackBuilderInRepeat).get_maxContent_ez72f2_k$ = function () {
-    return Companion_getInstance_8().get_MaxContent_n32482_k$();
+    return Companion_getInstance_16().get_MaxContent_n32482_k$();
   };
   protoOf(GridTrackBuilderInRepeat).get_autoFit_9f9csn_k$ = function () {
     return Type_AutoFit_getInstance();
@@ -1539,37 +2362,37 @@
     this.tracks_1.add_utx5q5_k$(track);
   };
   protoOf(GridTrackBuilderInRepeat).size_n8bj0z_k$ = function (value) {
-    return this.size_azcpvi_k$(Companion_getInstance_8().invoke_wfll5y_k$(value));
+    return this.size_azcpvi_k$(Companion_getInstance_16().invoke_wfll5y_k$(value));
   };
   protoOf(GridTrackBuilderInRepeat).size_q03g6h_k$ = function (value) {
-    return this.size_azcpvi_k$(Companion_getInstance_8().invoke_3uf9u8_k$(value));
+    return this.size_azcpvi_k$(Companion_getInstance_16().invoke_3uf9u8_k$(value));
   };
   protoOf(GridTrackBuilderInRepeat).fitContent_8jd78m_k$ = function (value) {
-    return this.size_azcpvi_k$(Companion_getInstance_8().fitContent_vrn1yu_k$(value));
+    return this.size_azcpvi_k$(Companion_getInstance_16().fitContent_vrn1yu_k$(value));
   };
   protoOf(GridTrackBuilderInRepeat).minmax_msesvw_k$ = function (min, max) {
-    return this.size_azcpvi_k$(Companion_getInstance_8().minmax_mdatpo_k$(min, max));
+    return this.size_azcpvi_k$(Companion_getInstance_16().minmax_mdatpo_k$(min, max));
   };
   protoOf(GridTrackBuilderInRepeat).minmax_el7xbs_k$ = function (min, max) {
-    return this.size_azcpvi_k$(Companion_getInstance_8().minmax_mdatpo_k$(min, max));
+    return this.size_azcpvi_k$(Companion_getInstance_16().minmax_mdatpo_k$(min, max));
   };
   protoOf(GridTrackBuilderInRepeat).minmax_9paic1_k$ = function (min, max) {
-    return this.minmax_msesvw_k$(min, Companion_getInstance_8().invoke_3uf9u8_k$(max));
+    return this.minmax_msesvw_k$(min, Companion_getInstance_16().invoke_3uf9u8_k$(max));
   };
   protoOf(GridTrackBuilderInRepeat).minmax_labs7t_k$ = function (min, max) {
-    return this.minmax_msesvw_k$(min, Companion_getInstance_8().invoke_wfll5y_k$(max));
+    return this.minmax_msesvw_k$(min, Companion_getInstance_16().invoke_wfll5y_k$(max));
   };
   protoOf(GridTrackBuilderInRepeat).minmax_npodc9_k$ = function (min, max) {
-    return this.minmax_el7xbs_k$(Companion_getInstance_8().invoke_wfll5y_k$(min), max);
+    return this.minmax_el7xbs_k$(Companion_getInstance_16().invoke_wfll5y_k$(min), max);
   };
   protoOf(GridTrackBuilderInRepeat).minmax_fxpgw2_k$ = function (min, max) {
-    return this.minmax_el7xbs_k$(Companion_getInstance_8().invoke_wfll5y_k$(min), Companion_getInstance_8().invoke_wfll5y_k$(max));
+    return this.minmax_el7xbs_k$(Companion_getInstance_16().invoke_wfll5y_k$(min), Companion_getInstance_16().invoke_wfll5y_k$(max));
   };
   protoOf(GridTrackBuilderInRepeat).minmax_1ha38s_k$ = function (min, max) {
-    return this.minmax_el7xbs_k$(Companion_getInstance_8().invoke_wfll5y_k$(min), Companion_getInstance_8().invoke_3uf9u8_k$(max));
+    return this.minmax_el7xbs_k$(Companion_getInstance_16().invoke_wfll5y_k$(min), Companion_getInstance_16().invoke_3uf9u8_k$(max));
   };
   protoOf(GridTrackBuilderInRepeat).lineNames_ii8gtg_k$ = function (names) {
-    this.tracks_1.add_utx5q5_k$(Companion_getInstance_9().lineNames_npjmfo_k$(names.slice()));
+    this.tracks_1.add_utx5q5_k$(Companion_getInstance_17().lineNames_npjmfo_k$(names.slice()));
   };
   function gridTemplateColumns_0(_this__u8e3s4, block) {
     // Inline function 'kotlin.apply' call
@@ -1598,43 +2421,43 @@
   function Inflexible(value) {
     TrackSize.call(this, value);
   }
-  function Keyword(value) {
+  function Keyword_2(value) {
     Inflexible.call(this, value);
   }
   function Fixed(value) {
     Inflexible.call(this, toString(value));
   }
-  function Companion_5() {
-    Companion_instance_5 = this;
+  function Companion_13() {
+    Companion_instance_13 = this;
   }
-  protoOf(Companion_5).get_Auto_wnyn88_k$ = function () {
-    return new Keyword('auto');
+  protoOf(Companion_13).get_Auto_wnyn88_k$ = function () {
+    return new Keyword_2('auto');
   };
-  protoOf(Companion_5).get_MinContent_hspenk_k$ = function () {
-    return new Keyword('min-content');
+  protoOf(Companion_13).get_MinContent_hspenk_k$ = function () {
+    return new Keyword_2('min-content');
   };
-  protoOf(Companion_5).get_MaxContent_n32482_k$ = function () {
-    return new Keyword('max-content');
+  protoOf(Companion_13).get_MaxContent_n32482_k$ = function () {
+    return new Keyword_2('max-content');
   };
-  protoOf(Companion_5).invoke_wfll5y_k$ = function (value) {
+  protoOf(Companion_13).invoke_wfll5y_k$ = function (value) {
     return new Fixed(value);
   };
-  protoOf(Companion_5).invoke_3uf9u8_k$ = function (value) {
+  protoOf(Companion_13).invoke_3uf9u8_k$ = function (value) {
     return new Flex(value);
   };
-  protoOf(Companion_5).minmax_mdatpo_k$ = function (min, max) {
+  protoOf(Companion_13).minmax_mdatpo_k$ = function (min, max) {
     return new MinMax(min, max);
   };
-  protoOf(Companion_5).fitContent_vrn1yu_k$ = function (value) {
+  protoOf(Companion_13).fitContent_vrn1yu_k$ = function (value) {
     return new FitContent(value);
   };
-  var Companion_instance_5;
-  function Companion_getInstance_8() {
-    if (Companion_instance_5 == null)
-      new Companion_5();
-    return Companion_instance_5;
+  var Companion_instance_13;
+  function Companion_getInstance_16() {
+    if (Companion_instance_13 == null)
+      new Companion_13();
+    return Companion_instance_13;
   }
-  function _get_value__a43j40_5($this) {
+  function _get_value__a43j40_13($this) {
     return $this.value_1;
   }
   var Type_AutoFill_instance;
@@ -1689,11 +2512,11 @@
   function Auto(type, entries) {
     Repeat.call(this, type, entries);
   }
-  function _get_value__a43j40_6($this) {
+  function _get_value__a43j40_14($this) {
     return $this.value_1;
   }
   function TrackSize(value) {
-    Companion_getInstance_8();
+    Companion_getInstance_16();
     GridEntry.call(this, value);
   }
   function Repeat(value, entries) {
@@ -1704,32 +2527,32 @@
     return this.entries_1;
   };
   function LineNames(names) {
-    GridEntry.call(this, joinToString(names, ' ', '[', ']'));
+    GridEntry.call(this, joinToString_0(names, ' ', '[', ']'));
     this.names_1 = names;
   }
   protoOf(LineNames).get_names_ivn21r_k$ = function () {
     return this.names_1;
   };
-  function Companion_6() {
-    Companion_instance_6 = this;
+  function Companion_14() {
+    Companion_instance_14 = this;
   }
-  protoOf(Companion_6).repeat_1fs2oe_k$ = function (count, entries) {
+  protoOf(Companion_14).repeat_1fs2oe_k$ = function (count, entries) {
     return new Track(count, entries.slice());
   };
-  protoOf(Companion_6).repeat_lz16g6_k$ = function (type, entries) {
+  protoOf(Companion_14).repeat_lz16g6_k$ = function (type, entries) {
     return new Auto(type, entries.slice());
   };
-  protoOf(Companion_6).lineNames_npjmfo_k$ = function (names) {
+  protoOf(Companion_14).lineNames_npjmfo_k$ = function (names) {
     return new LineNames(names.slice());
   };
-  var Companion_instance_6;
-  function Companion_getInstance_9() {
-    if (Companion_instance_6 == null)
-      new Companion_6();
-    return Companion_instance_6;
+  var Companion_instance_14;
+  function Companion_getInstance_17() {
+    if (Companion_instance_14 == null)
+      new Companion_14();
+    return Companion_instance_14;
   }
   function GridEntry(value) {
-    Companion_getInstance_9();
+    Companion_getInstance_17();
     this.value_1 = value;
   }
   protoOf(GridEntry).toString = function () {
@@ -1787,7 +2610,7 @@
       accumulator = acc;
     }
     var tmp$ret$4 = accumulator;
-    return joinToString_0(tmp$ret$4, ' ');
+    return joinToString(tmp$ret$4, ' ');
   }
   function validate(_this__u8e3s4) {
     // Inline function 'kotlin.collections.flatMap' call
@@ -1880,7 +2703,7 @@
           var message_2 = 'Cannot use flex values with auto-repeat';
           throw IllegalStateException_init_$Create$(toString(message_2));
         } else {
-          if (element_2 instanceof Keyword) {
+          if (element_2 instanceof Keyword_2) {
             // Inline function 'kotlin.error' call
             var message_3 = 'Cannot use keywords with auto-repeat';
             throw IllegalStateException_init_$Create$(toString(message_3));
@@ -2077,56 +2900,56 @@
       }
     }
   };
-  function _get_value__a43j40_7($this) {
+  function _get_value__a43j40_15($this) {
     return $this.value_1;
   }
-  function Companion_7() {
-    Companion_instance_7 = this;
+  function Companion_15() {
+    Companion_instance_15 = this;
   }
-  protoOf(Companion_7).get_Baseline_bu5gku_k$ = function () {
+  protoOf(Companion_15).get_Baseline_bu5gku_k$ = function () {
     return new VerticalAlign('baseline');
   };
-  protoOf(Companion_7).get_Sub_18jjnt_k$ = function () {
+  protoOf(Companion_15).get_Sub_18jjnt_k$ = function () {
     return new VerticalAlign('sub');
   };
-  protoOf(Companion_7).get_Super_ih5fzm_k$ = function () {
+  protoOf(Companion_15).get_Super_ih5fzm_k$ = function () {
     return new VerticalAlign('super');
   };
-  protoOf(Companion_7).get_TextTop_5chtr3_k$ = function () {
+  protoOf(Companion_15).get_TextTop_5chtr3_k$ = function () {
     return new VerticalAlign('text-top');
   };
-  protoOf(Companion_7).get_TextBottom_zaoo69_k$ = function () {
+  protoOf(Companion_15).get_TextBottom_zaoo69_k$ = function () {
     return new VerticalAlign('text-bottom');
   };
-  protoOf(Companion_7).get_Middle_1hpdq6_k$ = function () {
+  protoOf(Companion_15).get_Middle_1hpdq6_k$ = function () {
     return new VerticalAlign('middle');
   };
-  protoOf(Companion_7).get_Top_18jj1w_k$ = function () {
+  protoOf(Companion_15).get_Top_18jj1w_k$ = function () {
     return new VerticalAlign('top');
   };
-  protoOf(Companion_7).get_Bottom_3m75bg_k$ = function () {
+  protoOf(Companion_15).get_Bottom_3m75bg_k$ = function () {
     return new VerticalAlign('bottom');
   };
-  protoOf(Companion_7).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_15).get_Inherit_a1a9e6_k$ = function () {
     return new VerticalAlign('inherit');
   };
-  protoOf(Companion_7).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_15).get_Initial_a0h2v9_k$ = function () {
     return new VerticalAlign('initial');
   };
-  protoOf(Companion_7).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_15).get_Revert_3t1tzh_k$ = function () {
     return new VerticalAlign('revert');
   };
-  protoOf(Companion_7).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_15).get_Unset_ii4mhs_k$ = function () {
     return new VerticalAlign('unset');
   };
-  var Companion_instance_7;
-  function Companion_getInstance_10() {
-    if (Companion_instance_7 == null)
-      new Companion_7();
-    return Companion_instance_7;
+  var Companion_instance_15;
+  function Companion_getInstance_18() {
+    if (Companion_instance_15 == null)
+      new Companion_15();
+    return Companion_instance_15;
   }
   function VerticalAlign(value) {
-    Companion_getInstance_10();
+    Companion_getInstance_18();
     this.value_1 = value;
   }
   protoOf(VerticalAlign).toString = function () {
@@ -2136,239 +2959,239 @@
     _this__u8e3s4.property_npxg1h_k$('vertical-align', verticalAlign);
   }
   function paddingInline(_this__u8e3s4, value) {
-    _this__u8e3s4.property_wcrait_k$('padding-inline', joinToString(value, ' '));
+    _this__u8e3s4.property_wcrait_k$('padding-inline', joinToString_0(value, ' '));
   }
-  function _get_value__a43j40_8($this) {
+  function _get_value__a43j40_16($this) {
     return $this.value_1;
   }
-  function Companion_8() {
-    Companion_instance_8 = this;
+  function Companion_16() {
+    Companion_instance_16 = this;
   }
-  protoOf(Companion_8).of_5gnbr7_k$ = function (text) {
+  protoOf(Companion_16).of_5gnbr7_k$ = function (text) {
     return new ListStyleType(wrapQuotesIfNecessary(text));
   };
-  protoOf(Companion_8).get_ArabicIndic_7dczms_k$ = function () {
+  protoOf(Companion_16).get_ArabicIndic_7dczms_k$ = function () {
     return new ListStyleType('arabic-indic');
   };
-  protoOf(Companion_8).get_Armenian_glp6oq_k$ = function () {
+  protoOf(Companion_16).get_Armenian_glp6oq_k$ = function () {
     return new ListStyleType('armenian');
   };
-  protoOf(Companion_8).get_Bengali_p42yft_k$ = function () {
+  protoOf(Companion_16).get_Bengali_p42yft_k$ = function () {
     return new ListStyleType('bengali');
   };
-  protoOf(Companion_8).get_Cambodian_yjaltx_k$ = function () {
+  protoOf(Companion_16).get_Cambodian_yjaltx_k$ = function () {
     return new ListStyleType('cambodian');
   };
-  protoOf(Companion_8).get_Circle_38hx53_k$ = function () {
+  protoOf(Companion_16).get_Circle_38hx53_k$ = function () {
     return new ListStyleType('circle');
   };
-  protoOf(Companion_8).get_CjkDecimal_eqj52u_k$ = function () {
+  protoOf(Companion_16).get_CjkDecimal_eqj52u_k$ = function () {
     return new ListStyleType('cjk-decimal');
   };
-  protoOf(Companion_8).get_CjkEarthlyBranch_kcpnsy_k$ = function () {
+  protoOf(Companion_16).get_CjkEarthlyBranch_kcpnsy_k$ = function () {
     return new ListStyleType('cjk-earthly-branch');
   };
-  protoOf(Companion_8).get_CjkHeavenlyStem_v60yes_k$ = function () {
+  protoOf(Companion_16).get_CjkHeavenlyStem_v60yes_k$ = function () {
     return new ListStyleType('cjk-heavenly-stem');
   };
-  protoOf(Companion_8).get_CjkIdeographic_325ofc_k$ = function () {
+  protoOf(Companion_16).get_CjkIdeographic_325ofc_k$ = function () {
     return new ListStyleType('cjk-ideographic');
   };
-  protoOf(Companion_8).get_Decimal_gq8r08_k$ = function () {
+  protoOf(Companion_16).get_Decimal_gq8r08_k$ = function () {
     return new ListStyleType('decimal');
   };
-  protoOf(Companion_8).get_DecimalLeadingZero_5q6aue_k$ = function () {
+  protoOf(Companion_16).get_DecimalLeadingZero_5q6aue_k$ = function () {
     return new ListStyleType('decimal-leading-zero');
   };
-  protoOf(Companion_8).get_Devanagari_fiqhev_k$ = function () {
+  protoOf(Companion_16).get_Devanagari_fiqhev_k$ = function () {
     return new ListStyleType('devanagari');
   };
-  protoOf(Companion_8).get_Disc_wo0b9a_k$ = function () {
+  protoOf(Companion_16).get_Disc_wo0b9a_k$ = function () {
     return new ListStyleType('disc');
   };
-  protoOf(Companion_8).get_DisclosureClosed_juf1pa_k$ = function () {
+  protoOf(Companion_16).get_DisclosureClosed_juf1pa_k$ = function () {
     return new ListStyleType('disclosure-closed');
   };
-  protoOf(Companion_8).get_DisclosureOpen_l759fk_k$ = function () {
+  protoOf(Companion_16).get_DisclosureOpen_l759fk_k$ = function () {
     return new ListStyleType('disclosure-open');
   };
-  protoOf(Companion_8).get_Georgian_4lk93_k$ = function () {
+  protoOf(Companion_16).get_Georgian_4lk93_k$ = function () {
     return new ListStyleType('georgian');
   };
-  protoOf(Companion_8).get_Gujarati_j012pe_k$ = function () {
+  protoOf(Companion_16).get_Gujarati_j012pe_k$ = function () {
     return new ListStyleType('gujarati');
   };
-  protoOf(Companion_8).get_Gurumukhi_5jh3xm_k$ = function () {
+  protoOf(Companion_16).get_Gurumukhi_5jh3xm_k$ = function () {
     return new ListStyleType('gurumukhi');
   };
-  protoOf(Companion_8).get_Hebrew_xqwd4_k$ = function () {
+  protoOf(Companion_16).get_Hebrew_xqwd4_k$ = function () {
     return new ListStyleType('hebrew');
   };
-  protoOf(Companion_8).get_Hiragana_hja76u_k$ = function () {
+  protoOf(Companion_16).get_Hiragana_hja76u_k$ = function () {
     return new ListStyleType('hiragana');
   };
-  protoOf(Companion_8).get_HiraganaIroha_z3xrq1_k$ = function () {
+  protoOf(Companion_16).get_HiraganaIroha_z3xrq1_k$ = function () {
     return new ListStyleType('hiragana-iroha');
   };
-  protoOf(Companion_8).get_JapaneseFormal_srlfzd_k$ = function () {
+  protoOf(Companion_16).get_JapaneseFormal_srlfzd_k$ = function () {
     return new ListStyleType('japanese-formal');
   };
-  protoOf(Companion_8).get_JapaneseInformal_8qufwu_k$ = function () {
+  protoOf(Companion_16).get_JapaneseInformal_8qufwu_k$ = function () {
     return new ListStyleType('japanese-informal');
   };
-  protoOf(Companion_8).get_Kannada_d9ddmn_k$ = function () {
+  protoOf(Companion_16).get_Kannada_d9ddmn_k$ = function () {
     return new ListStyleType('kannada');
   };
-  protoOf(Companion_8).get_Katakana_cguuob_k$ = function () {
+  protoOf(Companion_16).get_Katakana_cguuob_k$ = function () {
     return new ListStyleType('katakana');
   };
-  protoOf(Companion_8).get_KatakanaIroha_xgvh3q_k$ = function () {
+  protoOf(Companion_16).get_KatakanaIroha_xgvh3q_k$ = function () {
     return new ListStyleType('katakana-iroha');
   };
-  protoOf(Companion_8).get_Khmer_iciq6s_k$ = function () {
+  protoOf(Companion_16).get_Khmer_iciq6s_k$ = function () {
     return new ListStyleType('khmer');
   };
-  protoOf(Companion_8).get_KoreanHangulFormal_rvp4md_k$ = function () {
+  protoOf(Companion_16).get_KoreanHangulFormal_rvp4md_k$ = function () {
     return new ListStyleType('korean-hangul-formal');
   };
-  protoOf(Companion_8).get_KoreanHanjaFormal_xdca1e_k$ = function () {
+  protoOf(Companion_16).get_KoreanHanjaFormal_xdca1e_k$ = function () {
     return new ListStyleType('korean-hanja-formal');
   };
-  protoOf(Companion_8).get_KoreanHanjaInformal_vycz4j_k$ = function () {
+  protoOf(Companion_16).get_KoreanHanjaInformal_vycz4j_k$ = function () {
     return new ListStyleType('korean-hanja-informal');
   };
-  protoOf(Companion_8).get_Lao_18jpbj_k$ = function () {
+  protoOf(Companion_16).get_Lao_18jpbj_k$ = function () {
     return new ListStyleType('lao');
   };
-  protoOf(Companion_8).get_LowerAlpha_wmhyme_k$ = function () {
+  protoOf(Companion_16).get_LowerAlpha_wmhyme_k$ = function () {
     return new ListStyleType('lower-alpha');
   };
-  protoOf(Companion_8).get_LowerArmenian_u6eqrt_k$ = function () {
+  protoOf(Companion_16).get_LowerArmenian_u6eqrt_k$ = function () {
     return new ListStyleType('lower-armenian');
   };
-  protoOf(Companion_8).get_LowerGreek_wpwbvs_k$ = function () {
+  protoOf(Companion_16).get_LowerGreek_wpwbvs_k$ = function () {
     return new ListStyleType('lower-greek');
   };
-  protoOf(Companion_8).get_LowerLatin_wscrak_k$ = function () {
+  protoOf(Companion_16).get_LowerLatin_wscrak_k$ = function () {
     return new ListStyleType('lower-latin');
   };
-  protoOf(Companion_8).get_LowerRoman_wvwbad_k$ = function () {
+  protoOf(Companion_16).get_LowerRoman_wvwbad_k$ = function () {
     return new ListStyleType('lower-roman');
   };
-  protoOf(Companion_8).get_Malayalam_4qmsf2_k$ = function () {
+  protoOf(Companion_16).get_Malayalam_4qmsf2_k$ = function () {
     return new ListStyleType('malayalam');
   };
-  protoOf(Companion_8).get_Mongolian_e4gexh_k$ = function () {
+  protoOf(Companion_16).get_Mongolian_e4gexh_k$ = function () {
     return new ListStyleType('mongolian');
   };
-  protoOf(Companion_8).get_Myanmar_h909b8_k$ = function () {
+  protoOf(Companion_16).get_Myanmar_h909b8_k$ = function () {
     return new ListStyleType('myanmar');
   };
-  protoOf(Companion_8).get_Oriya_iew7xh_k$ = function () {
+  protoOf(Companion_16).get_Oriya_iew7xh_k$ = function () {
     return new ListStyleType('oriya');
   };
-  protoOf(Companion_8).get_Persian_hkpriv_k$ = function () {
+  protoOf(Companion_16).get_Persian_hkpriv_k$ = function () {
     return new ListStyleType('persian');
   };
-  protoOf(Companion_8).get_SimpChineseFormal_vtcj22_k$ = function () {
+  protoOf(Companion_16).get_SimpChineseFormal_vtcj22_k$ = function () {
     return new ListStyleType('simp-chinese-formal');
   };
-  protoOf(Companion_8).get_SimpChineseInformal_q999un_k$ = function () {
+  protoOf(Companion_16).get_SimpChineseInformal_q999un_k$ = function () {
     return new ListStyleType('simp-chinese-informal');
   };
-  protoOf(Companion_8).get_Square_4go9ja_k$ = function () {
+  protoOf(Companion_16).get_Square_4go9ja_k$ = function () {
     return new ListStyleType('square');
   };
-  protoOf(Companion_8).get_Tamil_ihcepm_k$ = function () {
+  protoOf(Companion_16).get_Tamil_ihcepm_k$ = function () {
     return new ListStyleType('tamil');
   };
-  protoOf(Companion_8).get_Telugu_4qz0i9_k$ = function () {
+  protoOf(Companion_16).get_Telugu_4qz0i9_k$ = function () {
     return new ListStyleType('telugu');
   };
-  protoOf(Companion_8).get_Thai_woahvp_k$ = function () {
+  protoOf(Companion_16).get_Thai_woahvp_k$ = function () {
     return new ListStyleType('thai');
   };
-  protoOf(Companion_8).get_TradChineseFormal_7jy5gu_k$ = function () {
+  protoOf(Companion_16).get_TradChineseFormal_7jy5gu_k$ = function () {
     return new ListStyleType('trad-chinese-formal');
   };
-  protoOf(Companion_8).get_TradChineseInformal_j8y7ih_k$ = function () {
+  protoOf(Companion_16).get_TradChineseInformal_j8y7ih_k$ = function () {
     return new ListStyleType('trad-chinese-informal');
   };
-  protoOf(Companion_8).get_UpperAlpha_f6mwsb_k$ = function () {
+  protoOf(Companion_16).get_UpperAlpha_f6mwsb_k$ = function () {
     return new ListStyleType('upper-alpha');
   };
-  protoOf(Companion_8).get_UpperArmenian_gf87di_k$ = function () {
+  protoOf(Companion_16).get_UpperArmenian_gf87di_k$ = function () {
     return new ListStyleType('upper-armenian');
   };
-  protoOf(Companion_8).get_UpperGreek_f38jix_k$ = function () {
+  protoOf(Companion_16).get_UpperGreek_f38jix_k$ = function () {
     return new ListStyleType('upper-greek');
   };
-  protoOf(Companion_8).get_UpperLatin_f0s445_k$ = function () {
+  protoOf(Companion_16).get_UpperLatin_f0s445_k$ = function () {
     return new ListStyleType('upper-latin');
   };
-  protoOf(Companion_8).get_UpperRoman_ex8k4c_k$ = function () {
+  protoOf(Companion_16).get_UpperRoman_ex8k4c_k$ = function () {
     return new ListStyleType('upper-roman');
   };
-  protoOf(Companion_8).get_None_wo6tgh_k$ = function () {
+  protoOf(Companion_16).get_None_wo6tgh_k$ = function () {
     return new ListStyleType('none');
   };
-  protoOf(Companion_8).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_16).get_Inherit_a1a9e6_k$ = function () {
     return new ListStyleType('inherit');
   };
-  protoOf(Companion_8).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_16).get_Initial_a0h2v9_k$ = function () {
     return new ListStyleType('initial');
   };
-  protoOf(Companion_8).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_16).get_Revert_3t1tzh_k$ = function () {
     return new ListStyleType('revert');
   };
-  protoOf(Companion_8).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_16).get_Unset_ii4mhs_k$ = function () {
     return new ListStyleType('unset');
   };
-  var Companion_instance_8;
-  function Companion_getInstance_11() {
-    if (Companion_instance_8 == null)
-      new Companion_8();
-    return Companion_instance_8;
+  var Companion_instance_16;
+  function Companion_getInstance_19() {
+    if (Companion_instance_16 == null)
+      new Companion_16();
+    return Companion_instance_16;
   }
   function ListStyleType(value) {
-    Companion_getInstance_11();
+    Companion_getInstance_19();
     this.value_1 = value;
   }
   protoOf(ListStyleType).toString = function () {
     return this.value_1;
   };
-  function _get_value__a43j40_9($this) {
+  function _get_value__a43j40_17($this) {
     return $this.value_1;
   }
-  function Companion_9() {
-    Companion_instance_9 = this;
+  function Companion_17() {
+    Companion_instance_17 = this;
   }
-  protoOf(Companion_9).get_Inside_bggkb_k$ = function () {
+  protoOf(Companion_17).get_Inside_bggkb_k$ = function () {
     return new ListStylePosition('inside');
   };
-  protoOf(Companion_9).get_Outside_ai50v0_k$ = function () {
+  protoOf(Companion_17).get_Outside_ai50v0_k$ = function () {
     return new ListStylePosition('outside');
   };
-  protoOf(Companion_9).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_17).get_Inherit_a1a9e6_k$ = function () {
     return new ListStylePosition('inherit');
   };
-  protoOf(Companion_9).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_17).get_Initial_a0h2v9_k$ = function () {
     return new ListStylePosition('initial');
   };
-  protoOf(Companion_9).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_17).get_Revert_3t1tzh_k$ = function () {
     return new ListStylePosition('revert');
   };
-  protoOf(Companion_9).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_17).get_Unset_ii4mhs_k$ = function () {
     return new ListStylePosition('unset');
   };
-  var Companion_instance_9;
-  function Companion_getInstance_12() {
-    if (Companion_instance_9 == null)
-      new Companion_9();
-    return Companion_instance_9;
+  var Companion_instance_17;
+  function Companion_getInstance_20() {
+    if (Companion_instance_17 == null)
+      new Companion_17();
+    return Companion_instance_17;
   }
   function ListStylePosition(value) {
-    Companion_getInstance_12();
+    Companion_getInstance_20();
     this.value_1 = value;
   }
   protoOf(ListStylePosition).toString = function () {
@@ -2400,55 +3223,140 @@
       _this__u8e3s4.property_npxg1h_k$('list-style-image', image);
     }
   }
-  function _get_value__a43j40_10($this) {
+  function objectFit(_this__u8e3s4, objectFit) {
+    _this__u8e3s4.property_npxg1h_k$('object-fit', objectFit);
+  }
+  function _get_value__a43j40_18($this) {
     return $this.value_1;
   }
-  function Companion_10() {
-    Companion_instance_10 = this;
+  function Companion_18() {
+    Companion_instance_18 = this;
   }
-  protoOf(Companion_10).get_Contain_qhyalx_k$ = function () {
+  protoOf(Companion_18).get_Normal_22avww_k$ = function () {
+    return new MixBlendMode('normal');
+  };
+  protoOf(Companion_18).get_Multiply_jx6cqb_k$ = function () {
+    return new MixBlendMode('multiply');
+  };
+  protoOf(Companion_18).get_Screen_48xaxh_k$ = function () {
+    return new MixBlendMode('screen');
+  };
+  protoOf(Companion_18).get_Overlay_aqx5jb_k$ = function () {
+    return new MixBlendMode('overlay');
+  };
+  protoOf(Companion_18).get_Darken_2vuhq0_k$ = function () {
+    return new MixBlendMode('darken');
+  };
+  protoOf(Companion_18).get_Lighten_vm6n1y_k$ = function () {
+    return new MixBlendMode('lighten');
+  };
+  protoOf(Companion_18).get_ColorDodge_xpig2l_k$ = function () {
+    return new MixBlendMode('color-dodge');
+  };
+  protoOf(Companion_18).get_ColorBurn_3dln9l_k$ = function () {
+    return new MixBlendMode('color-burn');
+  };
+  protoOf(Companion_18).get_HardLight_twrkma_k$ = function () {
+    return new MixBlendMode('hard-light');
+  };
+  protoOf(Companion_18).get_SoftLight_73ckeb_k$ = function () {
+    return new MixBlendMode('soft-light');
+  };
+  protoOf(Companion_18).get_Difference_tnhgre_k$ = function () {
+    return new MixBlendMode('difference');
+  };
+  protoOf(Companion_18).get_Exclusion_1hb6rf_k$ = function () {
+    return new MixBlendMode('exclusion');
+  };
+  protoOf(Companion_18).get_Hue_18jrtd_k$ = function () {
+    return new MixBlendMode('hue');
+  };
+  protoOf(Companion_18).get_Saturation_8zdkl7_k$ = function () {
+    return new MixBlendMode('saturation');
+  };
+  protoOf(Companion_18).get_Color_i88tui_k$ = function () {
+    return new MixBlendMode('color');
+  };
+  protoOf(Companion_18).get_Luminosity_ma147q_k$ = function () {
+    return new MixBlendMode('luminosity');
+  };
+  protoOf(Companion_18).get_PlusDarker_mrfjwm_k$ = function () {
+    return new MixBlendMode('plus-darker');
+  };
+  protoOf(Companion_18).get_PlusLighter_ppim9s_k$ = function () {
+    return new MixBlendMode('plus-lighter');
+  };
+  protoOf(Companion_18).get_Inherit_a1a9e6_k$ = function () {
+    return new MixBlendMode('inherit');
+  };
+  protoOf(Companion_18).get_Initial_a0h2v9_k$ = function () {
+    return new MixBlendMode('initial');
+  };
+  protoOf(Companion_18).get_Revert_3t1tzh_k$ = function () {
+    return new MixBlendMode('revert');
+  };
+  protoOf(Companion_18).get_Unset_ii4mhs_k$ = function () {
+    return new MixBlendMode('unset');
+  };
+  var Companion_instance_18;
+  function Companion_getInstance_21() {
+    if (Companion_instance_18 == null)
+      new Companion_18();
+    return Companion_instance_18;
+  }
+  function MixBlendMode(value) {
+    Companion_getInstance_21();
+    this.value_1 = value;
+  }
+  protoOf(MixBlendMode).toString = function () {
+    return this.value_1;
+  };
+  function _get_value__a43j40_19($this) {
+    return $this.value_1;
+  }
+  function Companion_19() {
+    Companion_instance_19 = this;
+  }
+  protoOf(Companion_19).get_Contain_qhyalx_k$ = function () {
     return new ObjectFit('contain');
   };
-  protoOf(Companion_10).get_Cover_i8910u_k$ = function () {
+  protoOf(Companion_19).get_Cover_i8910u_k$ = function () {
     return new ObjectFit('cover');
   };
-  protoOf(Companion_10).get_Fill_wo1l2k_k$ = function () {
+  protoOf(Companion_19).get_Fill_wo1l2k_k$ = function () {
     return new ObjectFit('fill');
   };
-  protoOf(Companion_10).get_None_wo6tgh_k$ = function () {
+  protoOf(Companion_19).get_None_wo6tgh_k$ = function () {
     return new ObjectFit('none');
   };
-  protoOf(Companion_10).get_ScaleDown_ala7ur_k$ = function () {
+  protoOf(Companion_19).get_ScaleDown_ala7ur_k$ = function () {
     return new ObjectFit('scale-down');
   };
-  protoOf(Companion_10).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_19).get_Inherit_a1a9e6_k$ = function () {
     return new ObjectFit('inherit');
   };
-  protoOf(Companion_10).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_19).get_Initial_a0h2v9_k$ = function () {
     return new ObjectFit('initial');
   };
-  protoOf(Companion_10).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_19).get_Revert_3t1tzh_k$ = function () {
     return new ObjectFit('revert');
   };
-  protoOf(Companion_10).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_19).get_Unset_ii4mhs_k$ = function () {
     return new ObjectFit('unset');
   };
-  var Companion_instance_10;
-  function Companion_getInstance_13() {
-    if (Companion_instance_10 == null)
-      new Companion_10();
-    return Companion_instance_10;
+  var Companion_instance_19;
+  function Companion_getInstance_22() {
+    if (Companion_instance_19 == null)
+      new Companion_19();
+    return Companion_instance_19;
   }
   function ObjectFit(value) {
-    Companion_getInstance_13();
+    Companion_getInstance_22();
     this.value_1 = value;
   }
   protoOf(ObjectFit).toString = function () {
     return this.value_1;
   };
-  function objectFit(_this__u8e3s4, objectFit) {
-    _this__u8e3s4.property_npxg1h_k$('object-fit', objectFit);
-  }
   function outline(_this__u8e3s4, width, style, color) {
     width = width === VOID ? null : width;
     style = style === VOID ? null : style;
@@ -2496,7 +3404,7 @@
   };
   protoOf(CSSOutline).toString = function () {
     var values = listOfNotNull([this.color_1, this.style_1, this.width_1]);
-    return joinToString_0(values, ' ');
+    return joinToString(values, ' ');
   };
   function outline$lambda($width, $style, $color) {
     return function ($this$outline) {
@@ -2506,47 +3414,47 @@
       return Unit_getInstance();
     };
   }
-  function _get_value__a43j40_11($this) {
+  function _get_value__a43j40_20($this) {
     return $this.value_1;
   }
-  function Companion_11() {
-    Companion_instance_11 = this;
+  function Companion_20() {
+    Companion_instance_20 = this;
   }
-  protoOf(Companion_11).get_Visible_yikvpz_k$ = function () {
+  protoOf(Companion_20).get_Visible_yikvpz_k$ = function () {
     return new Overflow('visible');
   };
-  protoOf(Companion_11).get_Hidden_viqel_k$ = function () {
+  protoOf(Companion_20).get_Hidden_viqel_k$ = function () {
     return new Overflow('hidden');
   };
-  protoOf(Companion_11).get_Clip_wnzq9l_k$ = function () {
+  protoOf(Companion_20).get_Clip_wnzq9l_k$ = function () {
     return new Overflow('clip');
   };
-  protoOf(Companion_11).get_Scroll_48xiie_k$ = function () {
+  protoOf(Companion_20).get_Scroll_48xiie_k$ = function () {
     return new Overflow('scroll');
   };
-  protoOf(Companion_11).get_Auto_wnyn88_k$ = function () {
+  protoOf(Companion_20).get_Auto_wnyn88_k$ = function () {
     return new Overflow('auto');
   };
-  protoOf(Companion_11).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_20).get_Inherit_a1a9e6_k$ = function () {
     return new Overflow('inherit');
   };
-  protoOf(Companion_11).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_20).get_Initial_a0h2v9_k$ = function () {
     return new Overflow('initial');
   };
-  protoOf(Companion_11).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_20).get_Revert_3t1tzh_k$ = function () {
     return new Overflow('revert');
   };
-  protoOf(Companion_11).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_20).get_Unset_ii4mhs_k$ = function () {
     return new Overflow('unset');
   };
-  var Companion_instance_11;
-  function Companion_getInstance_14() {
-    if (Companion_instance_11 == null)
-      new Companion_11();
-    return Companion_instance_11;
+  var Companion_instance_20;
+  function Companion_getInstance_23() {
+    if (Companion_instance_20 == null)
+      new Companion_20();
+    return Companion_instance_20;
   }
   function Overflow(value) {
-    Companion_getInstance_14();
+    Companion_getInstance_23();
     this.value_1 = value;
   }
   protoOf(Overflow).toString = function () {
@@ -2754,210 +3662,210 @@
     this_0.append_22ad7x_k$(removeSuffix(removeSuffix(titleCamelCaseToKebabCase(property.callableName), '-var'), '-variable'));
     return this_0.toString();
   }
-  function _get_value__a43j40_12($this) {
+  function whiteSpace(_this__u8e3s4, whiteSpace) {
+    _this__u8e3s4.property_npxg1h_k$('white-space', whiteSpace);
+  }
+  function _get_value__a43j40_21($this) {
     return $this.value_1;
   }
-  function Companion_12() {
-    Companion_instance_12 = this;
+  function Companion_21() {
+    Companion_instance_21 = this;
   }
-  protoOf(Companion_12).get_None_wo6tgh_k$ = function () {
-    return new UserSelect('none');
-  };
-  protoOf(Companion_12).get_Auto_wnyn88_k$ = function () {
-    return new UserSelect('auto');
-  };
-  protoOf(Companion_12).get_Text_woag7q_k$ = function () {
-    return new UserSelect('text');
-  };
-  protoOf(Companion_12).get_Contain_qhyalx_k$ = function () {
-    return new UserSelect('contain');
-  };
-  protoOf(Companion_12).get_All_18jx7s_k$ = function () {
-    return new UserSelect('all');
-  };
-  protoOf(Companion_12).get_Inherit_a1a9e6_k$ = function () {
-    return new UserSelect('inherit');
-  };
-  protoOf(Companion_12).get_Initial_a0h2v9_k$ = function () {
-    return new UserSelect('initial');
-  };
-  protoOf(Companion_12).get_Revert_3t1tzh_k$ = function () {
-    return new UserSelect('revert');
-  };
-  protoOf(Companion_12).get_Unset_ii4mhs_k$ = function () {
-    return new UserSelect('unset');
-  };
-  var Companion_instance_12;
-  function Companion_getInstance_15() {
-    if (Companion_instance_12 == null)
-      new Companion_12();
-    return Companion_instance_12;
-  }
-  function UserSelect(value) {
-    Companion_getInstance_15();
-    this.value_1 = value;
-  }
-  protoOf(UserSelect).toString = function () {
-    return this.value_1;
-  };
-  function _get_value__a43j40_13($this) {
-    return $this.value_1;
-  }
-  function Companion_13() {
-    Companion_instance_13 = this;
-  }
-  protoOf(Companion_13).get_Normal_22avww_k$ = function () {
-    return new WhiteSpace('normal');
-  };
-  protoOf(Companion_13).get_NoWrap_21tqz8_k$ = function () {
-    return new WhiteSpace('nowrap');
-  };
-  protoOf(Companion_13).get_Pre_18jlye_k$ = function () {
-    return new WhiteSpace('pre');
-  };
-  protoOf(Companion_13).get_PreWrap_nintz8_k$ = function () {
-    return new WhiteSpace('pre-wrap');
-  };
-  protoOf(Companion_13).get_PreLine_nigmr2_k$ = function () {
-    return new WhiteSpace('pre-line');
-  };
-  protoOf(Companion_13).get_BreakSpaces_6b23jx_k$ = function () {
-    return new WhiteSpace('break-spaces');
-  };
-  protoOf(Companion_13).get_Inherit_a1a9e6_k$ = function () {
-    return new WhiteSpace('inherit');
-  };
-  protoOf(Companion_13).get_Initial_a0h2v9_k$ = function () {
-    return new WhiteSpace('initial');
-  };
-  protoOf(Companion_13).get_Revert_3t1tzh_k$ = function () {
-    return new WhiteSpace('revert');
-  };
-  protoOf(Companion_13).get_Unset_ii4mhs_k$ = function () {
-    return new WhiteSpace('unset');
-  };
-  var Companion_instance_13;
-  function Companion_getInstance_16() {
-    if (Companion_instance_13 == null)
-      new Companion_13();
-    return Companion_instance_13;
-  }
-  function WhiteSpace(value) {
-    Companion_getInstance_16();
-    this.value_1 = value;
-  }
-  protoOf(WhiteSpace).toString = function () {
-    return this.value_1;
-  };
-  function _get_value__a43j40_14($this) {
-    return $this.value_1;
-  }
-  function Companion_14() {
-    Companion_instance_14 = this;
-  }
-  protoOf(Companion_14).get_Left_wo5bw0_k$ = function () {
-    return new TextAlign('left');
-  };
-  protoOf(Companion_14).get_Right_igdsyb_k$ = function () {
-    return new TextAlign('right');
-  };
-  protoOf(Companion_14).get_Center_3arb0i_k$ = function () {
-    return new TextAlign('center');
-  };
-  protoOf(Companion_14).get_Justify_84qi6f_k$ = function () {
-    return new TextAlign('justify');
-  };
-  protoOf(Companion_14).get_JustifyAll_vzjb16_k$ = function () {
-    return new TextAlign('justify-all');
-  };
-  protoOf(Companion_14).get_Start_ih4i6x_k$ = function () {
-    return new TextAlign('start');
-  };
-  protoOf(Companion_14).get_End_18ju7i_k$ = function () {
-    return new TextAlign('end');
-  };
-  protoOf(Companion_14).get_MatchParent_4236be_k$ = function () {
-    return new TextAlign('match-parent');
-  };
-  protoOf(Companion_14).get_Inherit_a1a9e6_k$ = function () {
-    return new TextAlign('inherit');
-  };
-  protoOf(Companion_14).get_Initial_a0h2v9_k$ = function () {
-    return new TextAlign('initial');
-  };
-  protoOf(Companion_14).get_Revert_3t1tzh_k$ = function () {
-    return new TextAlign('revert');
-  };
-  protoOf(Companion_14).get_Unset_ii4mhs_k$ = function () {
-    return new TextAlign('unset');
-  };
-  var Companion_instance_14;
-  function Companion_getInstance_17() {
-    if (Companion_instance_14 == null)
-      new Companion_14();
-    return Companion_instance_14;
-  }
-  function TextAlign(value) {
-    Companion_getInstance_17();
-    this.value_1 = value;
-  }
-  protoOf(TextAlign).toString = function () {
-    return this.value_1;
-  };
-  function _get_value__a43j40_15($this) {
-    return $this.value_1;
-  }
-  function Companion_15() {
-    Companion_instance_15 = this;
-  }
-  protoOf(Companion_15).get_Underline_oo7egz_k$ = function () {
+  protoOf(Companion_21).get_Underline_oo7egz_k$ = function () {
     return new TextDecorationLine('underline');
   };
-  protoOf(Companion_15).get_Overline_lz0ci7_k$ = function () {
+  protoOf(Companion_21).get_Overline_lz0ci7_k$ = function () {
     return new TextDecorationLine('overline');
   };
-  protoOf(Companion_15).get_LineThrough_pr9ajs_k$ = function () {
+  protoOf(Companion_21).get_LineThrough_pr9ajs_k$ = function () {
     return new TextDecorationLine('line-through');
   };
-  protoOf(Companion_15).get_None_wo6tgh_k$ = function () {
+  protoOf(Companion_21).get_None_wo6tgh_k$ = function () {
     return new TextDecorationLine('none');
   };
-  protoOf(Companion_15).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_21).get_Inherit_a1a9e6_k$ = function () {
     return new TextDecorationLine('inherit');
   };
-  protoOf(Companion_15).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_21).get_Initial_a0h2v9_k$ = function () {
     return new TextDecorationLine('initial');
   };
-  protoOf(Companion_15).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_21).get_Revert_3t1tzh_k$ = function () {
     return new TextDecorationLine('revert');
   };
-  protoOf(Companion_15).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_21).get_Unset_ii4mhs_k$ = function () {
     return new TextDecorationLine('unset');
   };
-  var Companion_instance_15;
-  function Companion_getInstance_18() {
-    if (Companion_instance_15 == null)
-      new Companion_15();
-    return Companion_instance_15;
+  var Companion_instance_21;
+  function Companion_getInstance_24() {
+    if (Companion_instance_21 == null)
+      new Companion_21();
+    return Companion_instance_21;
   }
   function TextDecorationLine(value) {
-    Companion_getInstance_18();
+    Companion_getInstance_24();
     this.value_1 = value;
   }
   protoOf(TextDecorationLine).toString = function () {
     return this.value_1;
   };
+  function textDecorationLine(_this__u8e3s4, textDecorationLines) {
+    _this__u8e3s4.property_wcrait_k$('text-decoration-line', joinToString_0(textDecorationLines, ' '));
+  }
+  function _get_value__a43j40_22($this) {
+    return $this.value_1;
+  }
+  function Companion_22() {
+    Companion_instance_22 = this;
+  }
+  protoOf(Companion_22).get_None_wo6tgh_k$ = function () {
+    return new UserSelect('none');
+  };
+  protoOf(Companion_22).get_Auto_wnyn88_k$ = function () {
+    return new UserSelect('auto');
+  };
+  protoOf(Companion_22).get_Text_woag7q_k$ = function () {
+    return new UserSelect('text');
+  };
+  protoOf(Companion_22).get_Contain_qhyalx_k$ = function () {
+    return new UserSelect('contain');
+  };
+  protoOf(Companion_22).get_All_18jx7s_k$ = function () {
+    return new UserSelect('all');
+  };
+  protoOf(Companion_22).get_Inherit_a1a9e6_k$ = function () {
+    return new UserSelect('inherit');
+  };
+  protoOf(Companion_22).get_Initial_a0h2v9_k$ = function () {
+    return new UserSelect('initial');
+  };
+  protoOf(Companion_22).get_Revert_3t1tzh_k$ = function () {
+    return new UserSelect('revert');
+  };
+  protoOf(Companion_22).get_Unset_ii4mhs_k$ = function () {
+    return new UserSelect('unset');
+  };
+  var Companion_instance_22;
+  function Companion_getInstance_25() {
+    if (Companion_instance_22 == null)
+      new Companion_22();
+    return Companion_instance_22;
+  }
+  function UserSelect(value) {
+    Companion_getInstance_25();
+    this.value_1 = value;
+  }
+  protoOf(UserSelect).toString = function () {
+    return this.value_1;
+  };
   function userSelect(_this__u8e3s4, userSelect) {
     _this__u8e3s4.property_npxg1h_k$('user-select', userSelect);
   }
-  function whiteSpace(_this__u8e3s4, whiteSpace) {
-    _this__u8e3s4.property_npxg1h_k$('white-space', whiteSpace);
+  function _get_value__a43j40_23($this) {
+    return $this.value_1;
   }
+  function Companion_23() {
+    Companion_instance_23 = this;
+  }
+  protoOf(Companion_23).get_Left_wo5bw0_k$ = function () {
+    return new TextAlign('left');
+  };
+  protoOf(Companion_23).get_Right_igdsyb_k$ = function () {
+    return new TextAlign('right');
+  };
+  protoOf(Companion_23).get_Center_3arb0i_k$ = function () {
+    return new TextAlign('center');
+  };
+  protoOf(Companion_23).get_Justify_84qi6f_k$ = function () {
+    return new TextAlign('justify');
+  };
+  protoOf(Companion_23).get_JustifyAll_vzjb16_k$ = function () {
+    return new TextAlign('justify-all');
+  };
+  protoOf(Companion_23).get_Start_ih4i6x_k$ = function () {
+    return new TextAlign('start');
+  };
+  protoOf(Companion_23).get_End_18ju7i_k$ = function () {
+    return new TextAlign('end');
+  };
+  protoOf(Companion_23).get_MatchParent_4236be_k$ = function () {
+    return new TextAlign('match-parent');
+  };
+  protoOf(Companion_23).get_Inherit_a1a9e6_k$ = function () {
+    return new TextAlign('inherit');
+  };
+  protoOf(Companion_23).get_Initial_a0h2v9_k$ = function () {
+    return new TextAlign('initial');
+  };
+  protoOf(Companion_23).get_Revert_3t1tzh_k$ = function () {
+    return new TextAlign('revert');
+  };
+  protoOf(Companion_23).get_Unset_ii4mhs_k$ = function () {
+    return new TextAlign('unset');
+  };
+  var Companion_instance_23;
+  function Companion_getInstance_26() {
+    if (Companion_instance_23 == null)
+      new Companion_23();
+    return Companion_instance_23;
+  }
+  function TextAlign(value) {
+    Companion_getInstance_26();
+    this.value_1 = value;
+  }
+  protoOf(TextAlign).toString = function () {
+    return this.value_1;
+  };
+  function _get_value__a43j40_24($this) {
+    return $this.value_1;
+  }
+  function Companion_24() {
+    Companion_instance_24 = this;
+  }
+  protoOf(Companion_24).get_Normal_22avww_k$ = function () {
+    return new WhiteSpace('normal');
+  };
+  protoOf(Companion_24).get_NoWrap_21tqz8_k$ = function () {
+    return new WhiteSpace('nowrap');
+  };
+  protoOf(Companion_24).get_Pre_18jlye_k$ = function () {
+    return new WhiteSpace('pre');
+  };
+  protoOf(Companion_24).get_PreWrap_nintz8_k$ = function () {
+    return new WhiteSpace('pre-wrap');
+  };
+  protoOf(Companion_24).get_PreLine_nigmr2_k$ = function () {
+    return new WhiteSpace('pre-line');
+  };
+  protoOf(Companion_24).get_BreakSpaces_6b23jx_k$ = function () {
+    return new WhiteSpace('break-spaces');
+  };
+  protoOf(Companion_24).get_Inherit_a1a9e6_k$ = function () {
+    return new WhiteSpace('inherit');
+  };
+  protoOf(Companion_24).get_Initial_a0h2v9_k$ = function () {
+    return new WhiteSpace('initial');
+  };
+  protoOf(Companion_24).get_Revert_3t1tzh_k$ = function () {
+    return new WhiteSpace('revert');
+  };
+  protoOf(Companion_24).get_Unset_ii4mhs_k$ = function () {
+    return new WhiteSpace('unset');
+  };
+  var Companion_instance_24;
+  function Companion_getInstance_27() {
+    if (Companion_instance_24 == null)
+      new Companion_24();
+    return Companion_instance_24;
+  }
+  function WhiteSpace(value) {
+    Companion_getInstance_27();
+    this.value_1 = value;
+  }
+  protoOf(WhiteSpace).toString = function () {
+    return this.value_1;
+  };
   function textAlign(_this__u8e3s4, textAlign) {
     _this__u8e3s4.property_npxg1h_k$('text-align', textAlign);
-  }
-  function textDecorationLine(_this__u8e3s4, textDecorationLines) {
-    _this__u8e3s4.property_wcrait_k$('text-decoration-line', joinToString(textDecorationLines, ' '));
   }
   function translateX(_this__u8e3s4, tx) {
     translate(_this__u8e3s4, tx);
@@ -2965,10 +3873,10 @@
   function translate(_this__u8e3s4, tx) {
     _this__u8e3s4.property_npxg1h_k$('translate', tx);
   }
-  function Companion_16() {
-    Companion_instance_16 = this;
+  function Companion_25() {
+    Companion_instance_25 = this;
   }
-  protoOf(Companion_16).group_t9r796_k$ = function (properties, duration, timingFunction, delay) {
+  protoOf(Companion_25).group_t9r796_k$ = function (properties, duration, timingFunction, delay) {
     // Inline function 'kotlin.collections.toTypedArray' call
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
@@ -2982,13 +3890,13 @@
     }
     return copyToArray(destination);
   };
-  protoOf(Companion_16).group$default_5lgzta_k$ = function (properties, duration, timingFunction, delay, $super) {
+  protoOf(Companion_25).group$default_5lgzta_k$ = function (properties, duration, timingFunction, delay, $super) {
     duration = duration === VOID ? null : duration;
     timingFunction = timingFunction === VOID ? null : timingFunction;
     delay = delay === VOID ? null : delay;
     return $super === VOID ? this.group_t9r796_k$(properties, duration, timingFunction, delay) : $super.group_t9r796_k$.call(this, properties, duration, timingFunction, delay);
   };
-  protoOf(Companion_16).group_9h9urd_k$ = function (properties, duration, timingFunction, delay) {
+  protoOf(Companion_25).group_9h9urd_k$ = function (properties, duration, timingFunction, delay) {
     // Inline function 'kotlin.collections.toTypedArray' call
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
@@ -3002,30 +3910,30 @@
     }
     return copyToArray(destination);
   };
-  protoOf(Companion_16).group$default_8rh311_k$ = function (properties, duration, timingFunction, delay, $super) {
+  protoOf(Companion_25).group$default_8rh311_k$ = function (properties, duration, timingFunction, delay, $super) {
     duration = duration === VOID ? null : duration;
     timingFunction = timingFunction === VOID ? null : timingFunction;
     delay = delay === VOID ? null : delay;
     return $super === VOID ? this.group_9h9urd_k$(properties, duration, timingFunction, delay) : $super.group_9h9urd_k$.call(this, properties, duration, timingFunction, delay);
   };
-  var Companion_instance_16;
-  function Companion_getInstance_19() {
-    if (Companion_instance_16 == null)
-      new Companion_16();
-    return Companion_instance_16;
+  var Companion_instance_25;
+  function Companion_getInstance_28() {
+    if (Companion_instance_25 == null)
+      new Companion_25();
+    return Companion_instance_25;
   }
   function CSSTransition_init_$Init$(property, duration, timingFunction, delay, $this) {
     duration = duration === VOID ? null : duration;
     timingFunction = timingFunction === VOID ? null : timingFunction;
     delay = delay === VOID ? null : delay;
-    CSSTransition.call($this, Companion_getInstance_20().of_5gnbr7_k$(property), duration, timingFunction, delay);
+    CSSTransition.call($this, Companion_getInstance_29().of_5gnbr7_k$(property), duration, timingFunction, delay);
     return $this;
   }
   function CSSTransition_init_$Create$(property, duration, timingFunction, delay) {
     return CSSTransition_init_$Init$(property, duration, timingFunction, delay, objectCreate(protoOf(CSSTransition)));
   }
   function CSSTransition(property, duration, timingFunction, delay) {
-    Companion_getInstance_19();
+    Companion_getInstance_28();
     duration = duration === VOID ? null : duration;
     timingFunction = timingFunction === VOID ? null : timingFunction;
     delay = delay === VOID ? null : delay;
@@ -3080,7 +3988,7 @@
       this_0.add_utx5q5_k$(toString(this.delay_1));
     }
     var tmp$ret$6 = this_0.build_1k0s4u_k$();
-    return joinToString_0(tmp$ret$6, ' ');
+    return joinToString(tmp$ret$6, ' ');
   };
   protoOf(CSSTransition).component1_7eebsc_k$ = function () {
     return this.property_1;
@@ -3131,16 +4039,16 @@
     // Inline function 'kotlin.collections.isNotEmpty' call
     // Inline function 'kotlin.collections.isEmpty' call
     if (!(transitions.length === 0)) {
-      _this__u8e3s4.property_wcrait_k$('transition', joinToString(transitions));
+      _this__u8e3s4.property_wcrait_k$('transition', joinToString_0(transitions));
     }
   }
-  function _get_value__a43j40_16($this) {
+  function _get_value__a43j40_25($this) {
     return $this.value_1;
   }
-  function Companion_17() {
-    Companion_instance_17 = this;
+  function Companion_26() {
+    Companion_instance_26 = this;
   }
-  protoOf(Companion_17).of_5gnbr7_k$ = function (customValue) {
+  protoOf(Companion_26).of_5gnbr7_k$ = function (customValue) {
     // Inline function 'kotlin.check' call
     var tmp;
     // Inline function 'kotlin.text.isNotEmpty' call
@@ -3172,41 +4080,41 @@
     }
     return new TransitionProperty(customValue);
   };
-  protoOf(Companion_17).get_None_wo6tgh_k$ = function () {
+  protoOf(Companion_26).get_None_wo6tgh_k$ = function () {
     return new TransitionProperty('none');
   };
-  protoOf(Companion_17).get_All_18jx7s_k$ = function () {
+  protoOf(Companion_26).get_All_18jx7s_k$ = function () {
     return new TransitionProperty('all');
   };
-  protoOf(Companion_17).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_26).get_Inherit_a1a9e6_k$ = function () {
     return new TransitionProperty('inherit');
   };
-  protoOf(Companion_17).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_26).get_Initial_a0h2v9_k$ = function () {
     return new TransitionProperty('initial');
   };
-  protoOf(Companion_17).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_26).get_Revert_3t1tzh_k$ = function () {
     return new TransitionProperty('revert');
   };
-  protoOf(Companion_17).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_26).get_Unset_ii4mhs_k$ = function () {
     return new TransitionProperty('unset');
   };
-  var Companion_instance_17;
-  function Companion_getInstance_20() {
-    if (Companion_instance_17 == null)
-      new Companion_17();
-    return Companion_instance_17;
+  var Companion_instance_26;
+  function Companion_getInstance_29() {
+    if (Companion_instance_26 == null)
+      new Companion_26();
+    return Companion_instance_26;
   }
   function TransitionProperty(value) {
-    Companion_getInstance_20();
+    Companion_getInstance_29();
     this.value_1 = value;
   }
   protoOf(TransitionProperty).toString = function () {
     return this.value_1;
   };
-  function _get_value__a43j40_17($this) {
+  function _get_value__a43j40_26($this) {
     return $this.value_1;
   }
-  function Keyword_0(value) {
+  function Keyword_3(value) {
     CSSImage.call(this, value);
   }
   function Url(url) {
@@ -3215,38 +4123,38 @@
   function Gradient(gradient) {
     CSSImage.call(this, gradient.toString());
   }
-  function Companion_18() {
-    Companion_instance_18 = this;
+  function Companion_27() {
+    Companion_instance_27 = this;
   }
-  protoOf(Companion_18).of_dq0j3b_k$ = function (url) {
+  protoOf(Companion_27).of_dq0j3b_k$ = function (url) {
     return new Url(url);
   };
-  protoOf(Companion_18).of_jjeryt_k$ = function (gradient) {
+  protoOf(Companion_27).of_jjeryt_k$ = function (gradient) {
     return new Gradient(gradient);
   };
-  protoOf(Companion_18).get_None_wo6tgh_k$ = function () {
-    return new Keyword_0('none');
+  protoOf(Companion_27).get_None_wo6tgh_k$ = function () {
+    return new Keyword_3('none');
   };
-  protoOf(Companion_18).get_Inherit_a1a9e6_k$ = function () {
-    return new Keyword_0('inherit');
+  protoOf(Companion_27).get_Inherit_a1a9e6_k$ = function () {
+    return new Keyword_3('inherit');
   };
-  protoOf(Companion_18).get_Initial_a0h2v9_k$ = function () {
-    return new Keyword_0('initial');
+  protoOf(Companion_27).get_Initial_a0h2v9_k$ = function () {
+    return new Keyword_3('initial');
   };
-  protoOf(Companion_18).get_Revert_3t1tzh_k$ = function () {
-    return new Keyword_0('revert');
+  protoOf(Companion_27).get_Revert_3t1tzh_k$ = function () {
+    return new Keyword_3('revert');
   };
-  protoOf(Companion_18).get_Unset_ii4mhs_k$ = function () {
-    return new Keyword_0('unset');
+  protoOf(Companion_27).get_Unset_ii4mhs_k$ = function () {
+    return new Keyword_3('unset');
   };
-  var Companion_instance_18;
-  function Companion_getInstance_21() {
-    if (Companion_instance_18 == null)
-      new Companion_18();
-    return Companion_instance_18;
+  var Companion_instance_27;
+  function Companion_getInstance_30() {
+    if (Companion_instance_27 == null)
+      new Companion_27();
+    return Companion_instance_27;
   }
   function CSSImage(value) {
-    Companion_getInstance_21();
+    Companion_getInstance_30();
     this.value_1 = value;
   }
   protoOf(CSSImage).toString = function () {
@@ -3257,7 +4165,7 @@
     // Inline function 'kotlin.contracts.contract' call
     return action(CalcScopeInstance_getInstance());
   }
-  function _get_value__a43j40_18($this) {
+  function _get_value__a43j40_27($this) {
     return $this.value_1;
   }
   function CalcNum(value) {
@@ -3462,6 +4370,75 @@
   protoOf(CSSUrl).toString = function () {
     return 'url("' + this.url_1 + '")';
   };
+  function registerRefScope(_this__u8e3s4, scope, transform, $composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0.startReplaceableGroup_ip860b_k$(1100234072);
+    if (isTraceInProgress()) {
+      traceEventStart(1100234072, $changed, -1, 'com.varabyte.kobweb.compose.dom.registerRefScope (ElementRefScope.kt:107)');
+    }
+    if (scope == null) {
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+      $composer_0.endReplaceableGroup_ern0ak_k$();
+      return Unit_getInstance();
+    }
+    // Inline function 'kotlin.collections.forEach' call
+    var tmp0_iterator = scope.keyedCallbacks_1.iterator_jk1svi_k$();
+    while (tmp0_iterator.hasNext_bitz1p_k$()) {
+      var element = tmp0_iterator.next_20eer_k$();
+      // Inline function 'com.varabyte.kobweb.compose.dom.registerRefScope.<anonymous>' call
+      // Inline function 'kotlin.collections.toTypedArray' call
+      var this_0 = element.keys_1;
+      var tmp = copyToArray(this_0).slice();
+      DisposableEffect(tmp, registerRefScope$lambda(element, transform, _this__u8e3s4), $composer_0, 8);
+    }
+    if (isTraceInProgress()) {
+      traceEventEnd();
+    }
+    $composer_0.endReplaceableGroup_ern0ak_k$();
+  }
+  var com_varabyte_kobweb_compose_dom_ElementRefScope$stable;
+  function registerRefScope_0(_this__u8e3s4, scope, $composer, $changed) {
+    var $composer_0 = $composer;
+    $composer_0.startReplaceableGroup_ip860b_k$(1057476357);
+    if (isTraceInProgress()) {
+      traceEventStart(1057476357, $changed, -1, 'com.varabyte.kobweb.compose.dom.registerRefScope (ElementRefScope.kt:91)');
+    }
+    $composer_0.startReplaceableGroup_ip860b_k$(49626842);
+    // Inline function 'androidx.compose.runtime.cache' call
+    // Inline function 'kotlin.let' call
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+    var it = $composer_0.rememberedValue_4dg93v_k$();
+    var tmp;
+    if (false ? true : it === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
+      // Inline function 'com.varabyte.kobweb.compose.dom.registerRefScope.<anonymous>' call
+      var value = registerRefScope$lambda_0;
+      $composer_0.updateRememberedValue_l1wh71_k$(value);
+      tmp = value;
+    } else {
+      tmp = it;
+    }
+    var tmp_0 = tmp;
+    var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+    $composer_0.endReplaceableGroup_ern0ak_k$();
+    registerRefScope(_this__u8e3s4, scope, tmp0_group, $composer_0, 456);
+    if (isTraceInProgress()) {
+      traceEventEnd();
+    }
+    $composer_0.endReplaceableGroup_ern0ak_k$();
+  }
+  function refScope(init) {
+    // Inline function 'kotlin.run' call
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'com.varabyte.kobweb.compose.dom.refScope.<anonymous>' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = new Builder();
+    // Inline function 'kotlin.contracts.contract' call
+    init(this_0);
+    return this_0.build_1k0s4u_k$();
+  }
   function _no_name_provided__qut3iv() {
   }
   protoOf(_no_name_provided__qut3iv).dispose_3nnxhr_k$ = function () {
@@ -3589,82 +4566,13 @@
       return false;
     return true;
   };
-  function registerRefScope(_this__u8e3s4, scope, $composer, $changed) {
-    var $composer_0 = $composer;
-    $composer_0.startReplaceableGroup_ip860b_k$(1057476357);
-    if (isTraceInProgress()) {
-      traceEventStart(1057476357, $changed, -1, 'com.varabyte.kobweb.compose.dom.registerRefScope (ElementRefScope.kt:91)');
-    }
-    $composer_0.startReplaceableGroup_ip860b_k$(49626842);
-    // Inline function 'androidx.compose.runtime.cache' call
-    // Inline function 'kotlin.let' call
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-    var it = $composer_0.rememberedValue_4dg93v_k$();
-    var tmp;
-    if (false ? true : it === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
-      // Inline function 'com.varabyte.kobweb.compose.dom.registerRefScope.<anonymous>' call
-      var value = registerRefScope$lambda;
-      $composer_0.updateRememberedValue_l1wh71_k$(value);
-      tmp = value;
-    } else {
-      tmp = it;
-    }
-    var tmp_0 = tmp;
-    var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
-    $composer_0.endReplaceableGroup_ern0ak_k$();
-    registerRefScope_0(_this__u8e3s4, scope, tmp0_group, $composer_0, 456);
-    if (isTraceInProgress()) {
-      traceEventEnd();
-    }
-    $composer_0.endReplaceableGroup_ern0ak_k$();
-  }
-  var com_varabyte_kobweb_compose_dom_ElementRefScope$stable;
-  function registerRefScope_0(_this__u8e3s4, scope, transform, $composer, $changed) {
-    var $composer_0 = $composer;
-    $composer_0.startReplaceableGroup_ip860b_k$(1100234072);
-    if (isTraceInProgress()) {
-      traceEventStart(1100234072, $changed, -1, 'com.varabyte.kobweb.compose.dom.registerRefScope (ElementRefScope.kt:107)');
-    }
-    if (scope == null) {
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-      $composer_0.endReplaceableGroup_ern0ak_k$();
-      return Unit_getInstance();
-    }
-    // Inline function 'kotlin.collections.forEach' call
-    var tmp0_iterator = scope.keyedCallbacks_1.iterator_jk1svi_k$();
-    while (tmp0_iterator.hasNext_bitz1p_k$()) {
-      var element = tmp0_iterator.next_20eer_k$();
-      // Inline function 'com.varabyte.kobweb.compose.dom.registerRefScope.<anonymous>' call
-      // Inline function 'kotlin.collections.toTypedArray' call
-      var this_0 = element.keys_1;
-      var tmp = copyToArray(this_0).slice();
-      DisposableEffect(tmp, registerRefScope$lambda_0(element, transform, _this__u8e3s4), $composer_0, 8);
-    }
-    if (isTraceInProgress()) {
-      traceEventEnd();
-    }
-    $composer_0.endReplaceableGroup_ern0ak_k$();
-  }
-  function refScope(init) {
-    // Inline function 'kotlin.run' call
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'com.varabyte.kobweb.compose.dom.refScope.<anonymous>' call
-    // Inline function 'kotlin.apply' call
-    var this_0 = new Builder();
-    // Inline function 'kotlin.contracts.contract' call
-    init(this_0);
-    return this_0.build_1k0s4u_k$();
-  }
-  function registerRefScope$lambda(it) {
-    return it;
-  }
-  function registerRefScope$lambda_0($keyedCallback, $transform, $this_registerRefScope) {
+  function registerRefScope$lambda($keyedCallback, $transform, $this_registerRefScope) {
     return function ($this$DisposableEffect) {
       return $keyedCallback.refCallback_1.invoke_64dhf5_k$($this$DisposableEffect, $transform($this_registerRefScope.get_scopeElement_61kop2_k$($this$DisposableEffect)));
     };
+  }
+  function registerRefScope$lambda_0(it) {
+    return it;
   }
   //region block: post-declaration
   protoOf(ComparableAttrsScope).classes_ayghm2_k$ = classes;
@@ -3796,62 +4704,64 @@
   _.$_$.h = appearance;
   _.$_$.i = ariaDisabled;
   _.$_$.j = ariaHidden;
-  _.$_$.k = borderBottom;
-  _.$_$.l = borderColor;
-  _.$_$.m = borderColor_0;
-  _.$_$.n = borderColor_1;
-  _.$_$.o = borderColor_2;
-  _.$_$.p = borderLeft;
-  _.$_$.q = borderStyle_1;
-  _.$_$.r = borderStyle;
-  _.$_$.s = borderStyle_2;
-  _.$_$.t = borderStyle_0;
-  _.$_$.u = borderTop;
-  _.$_$.v = borderWidth;
-  _.$_$.w = boxShadow;
-  _.$_$.x = boxSizing_0;
-  _.$_$.y = cursor;
-  _.$_$.z = fontWeight;
-  _.$_$.a1 = gridTemplateColumns_0;
-  _.$_$.b1 = grid;
-  _.$_$.c1 = isNotEmpty;
-  _.$_$.d1 = justifyItems;
-  _.$_$.e1 = justifySelf;
-  _.$_$.f1 = listStyle;
-  _.$_$.g1 = objectFit;
-  _.$_$.h1 = outline;
-  _.$_$.i1 = overflowX;
-  _.$_$.j1 = overflowY;
-  _.$_$.k1 = overflow;
-  _.$_$.l1 = paddingInline;
-  _.$_$.m1 = setVariable;
-  _.$_$.n1 = textAlign;
-  _.$_$.o1 = textDecorationLine;
-  _.$_$.p1 = toDegrees;
-  _.$_$.q1 = transition;
-  _.$_$.r1 = translateX;
-  _.$_$.s1 = userSelect;
-  _.$_$.t1 = verticalAlign;
-  _.$_$.u1 = whiteSpace;
-  _.$_$.v1 = refScope;
-  _.$_$.w1 = registerRefScope;
-  _.$_$.x1 = ComparableAttrsScope_init_$Create$;
-  _.$_$.y1 = CSSTransition_init_$Create$;
-  _.$_$.z1 = Companion_getInstance_6;
-  _.$_$.a2 = Companion_getInstance_4;
-  _.$_$.b2 = Companion_getInstance_19;
-  _.$_$.c2 = Companion_getInstance_5;
-  _.$_$.d2 = Companion_getInstance_7;
-  _.$_$.e2 = Companion_getInstance_2;
-  _.$_$.f2 = Companion_getInstance_3;
-  _.$_$.g2 = Companion_getInstance_11;
-  _.$_$.h2 = Companion_getInstance_13;
-  _.$_$.i2 = Companion_getInstance_14;
-  _.$_$.j2 = Companion_getInstance_17;
-  _.$_$.k2 = Companion_getInstance_18;
-  _.$_$.l2 = Companion_getInstance_15;
-  _.$_$.m2 = Companion_getInstance_10;
-  _.$_$.n2 = Companion_getInstance_16;
+  _.$_$.k = background;
+  _.$_$.l = borderBottom;
+  _.$_$.m = borderColor;
+  _.$_$.n = borderColor_0;
+  _.$_$.o = borderColor_1;
+  _.$_$.p = borderColor_2;
+  _.$_$.q = borderLeft;
+  _.$_$.r = borderStyle_1;
+  _.$_$.s = borderStyle;
+  _.$_$.t = borderStyle_2;
+  _.$_$.u = borderStyle_0;
+  _.$_$.v = borderTop;
+  _.$_$.w = borderWidth;
+  _.$_$.x = boxShadow;
+  _.$_$.y = boxSizing_0;
+  _.$_$.z = cursor;
+  _.$_$.a1 = fontWeight;
+  _.$_$.b1 = gridTemplateColumns_0;
+  _.$_$.c1 = grid;
+  _.$_$.d1 = isNotEmpty;
+  _.$_$.e1 = justifyItems;
+  _.$_$.f1 = justifySelf;
+  _.$_$.g1 = listStyle;
+  _.$_$.h1 = objectFit;
+  _.$_$.i1 = outline;
+  _.$_$.j1 = overflowX;
+  _.$_$.k1 = overflowY;
+  _.$_$.l1 = overflow;
+  _.$_$.m1 = paddingInline;
+  _.$_$.n1 = setVariable;
+  _.$_$.o1 = textAlign;
+  _.$_$.p1 = textDecorationLine;
+  _.$_$.q1 = toDegrees;
+  _.$_$.r1 = transition;
+  _.$_$.s1 = translateX;
+  _.$_$.t1 = userSelect;
+  _.$_$.u1 = verticalAlign;
+  _.$_$.v1 = whiteSpace;
+  _.$_$.w1 = refScope;
+  _.$_$.x1 = registerRefScope;
+  _.$_$.y1 = registerRefScope_0;
+  _.$_$.z1 = ComparableAttrsScope_init_$Create$;
+  _.$_$.a2 = CSSTransition_init_$Create$;
+  _.$_$.b2 = Companion_getInstance_14;
+  _.$_$.c2 = Companion_getInstance_10;
+  _.$_$.d2 = Companion_getInstance_28;
+  _.$_$.e2 = Companion_getInstance_13;
+  _.$_$.f2 = Companion_getInstance_15;
+  _.$_$.g2 = Companion_getInstance_2;
+  _.$_$.h2 = Companion_getInstance_3;
+  _.$_$.i2 = Companion_getInstance_19;
+  _.$_$.j2 = Companion_getInstance_22;
+  _.$_$.k2 = Companion_getInstance_23;
+  _.$_$.l2 = Companion_getInstance_26;
+  _.$_$.m2 = Companion_getInstance_24;
+  _.$_$.n2 = Companion_getInstance_25;
+  _.$_$.o2 = Companion_getInstance_18;
+  _.$_$.p2 = Companion_getInstance_27;
   //endregion
   return _;
 }));

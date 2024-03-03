@@ -13,14 +13,14 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var Long = kotlin_kotlin.$_$.le;
+  var Long = kotlin_kotlin.$_$.ne;
   var VOID = kotlin_kotlin.$_$.e;
-  var protoOf = kotlin_kotlin.$_$.ob;
-  var THROW_CCE = kotlin_kotlin.$_$.re;
-  var getStringHashCode = kotlin_kotlin.$_$.na;
-  var Annotation = kotlin_kotlin.$_$.de;
-  var classMeta = kotlin_kotlin.$_$.ea;
-  var setMetadataFor = kotlin_kotlin.$_$.pb;
+  var protoOf = kotlin_kotlin.$_$.pb;
+  var THROW_CCE = kotlin_kotlin.$_$.te;
+  var getStringHashCode = kotlin_kotlin.$_$.oa;
+  var Annotation = kotlin_kotlin.$_$.fe;
+  var classMeta = kotlin_kotlin.$_$.fa;
+  var setMetadataFor = kotlin_kotlin.$_$.qb;
   //endregion
   //region block: pre-declaration
   setMetadataFor(IntRange, 'IntRange', classMeta, VOID, [Annotation]);
